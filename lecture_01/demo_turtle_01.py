@@ -1,6 +1,7 @@
-import turtle
+from turtle import Turtle, done
 import sys
 
+turtle = Turtle()
 turtle.speed('fast')
 
 colors = ['red', 'green', 'blue', 'purple']
@@ -15,7 +16,7 @@ def main():
             turtle.right(100 - x)
             x += 1
 
-    turtle.done()
+    done()
 
 if __name__ == '__main__':
     sys.exit(main())

@@ -1,4 +1,4 @@
-from turtle import *
+from turtle import Turtle
 import sys
 
 MAGIC_NUM = 1.23
