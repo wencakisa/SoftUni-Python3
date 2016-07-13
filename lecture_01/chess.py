@@ -9,7 +9,7 @@ def main():
     t.speed('fastest')
     t.pensize(3)
 
-    draw_table(dimension, 50, t, -250, 300)
+    draw_table(dimension, 50, t, -200, 300)
 
 
 def draw_table(dimension: int, side: int, turtle: Turtle, x_coord: int, y_coord: int) -> None:
