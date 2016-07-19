@@ -6,6 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Python-Dev-old" />
     <orderEntry type="module" module-name="Dive-Into-Python3" />
+    <orderEntry type="module" module-name="Programming-Basics" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

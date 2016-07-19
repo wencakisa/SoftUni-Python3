@@ -2,30 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e832c8c-5784-4c92-bf7f-0d9c2ec8d57e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Python-Dev-old/url_requests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lecture_01/olympics.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/date_time_task/most_sells.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/date_time_task/most_sells.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/exam/101/paper.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/exam/101/paper.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/exam/202/coords.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/exam/202/coords.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/exam/207/rakia.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/exam/207/rakia.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/exam/303/unique_sales.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/exam/303/unique_sales.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_02/slicing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/avg_price.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/avg_price.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/initials.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/initials.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/strings.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/strings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt" afterPath="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/102/str_count.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/102/str_count.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/103/flask.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/103/flask.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/104/triangle.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/104/triangle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/200/cesar.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/200/cesar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/201/currencies.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/201/currencies.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/204/min_price.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/204/min_price.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/205/anagrams.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice_exam/205/anagrams.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/searching_task/error.log" afterPath="$PROJECT_DIR$/../Python-Dev-old/searching_task/error.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/searching_task/find.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/searching_task/find.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" afterPath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_01/drawing_loop.py" afterPath="$PROJECT_DIR$/lecture_01/drawing_loop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_01/square.py" afterPath="$PROJECT_DIR$/lecture_01/square.py" />
     </list>
     <ignored path="Softuni-Python3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,13 +38,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="insta_downloader.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py">
+      <file leaf-file-name="matchmaking.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lecture_02/matchmaking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="342">
+              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#9#2495#0" expanded="false" />
+                <marker date="1468923294994" expanded="true" signature="9:2495" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,21 +61,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Python-Dev-old" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lecture_01/demo_turtle_01.py" />
-        <option value="$PROJECT_DIR$/lecture_01/olympics.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/thanker.py" />
-        <option value="$PROJECT_DIR$/lecture_01/chess.py" />
-        <option value="$PROJECT_DIR$/../Dive-Into-Python3/first_program.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt" />
-        <option value="$PROJECT_DIR$/../Dive-Into-Python3/hills.py" />
-        <option value="$PROJECT_DIR$/lecture_01/square.py" />
-        <option value="$PROJECT_DIR$/lecture_01/drawing_loop.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice_exam/205/anagrams.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice_exam/204/min_price.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice_exam/201/currencies.py" />
@@ -90,8 +73,6 @@
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice_exam/104/triangle.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice_exam/103/flask.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice_exam/102/str_count.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/exam/303/unique_sales.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/exam/207/rakia.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/exam/202/coords.py" />
@@ -102,6 +83,40 @@
         <option value="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/avg_price.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/initials.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/strings.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/searching_task/error.log" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/searching_task/find.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py" />
+        <option value="$PROJECT_DIR$/lecture_01/chess.py" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural1.py" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural2.py" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural3.py" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural4-rules.txt" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural4.py" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural5-rules.txt" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/plural5.py" />
+        <option value="$PROJECT_DIR$/../Dive-Into-Python3/fibonacci.py" />
+        <option value="$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_01.py" />
+        <option value="$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_03.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/thanker.py" />
+        <option value="$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_05.py" />
+        <option value="$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_06.py" />
+        <option value="$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_02.py" />
+        <option value="$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_04.py" />
+        <option value="$PROJECT_DIR$/lecture_02/strings.py" />
+        <option value="$PROJECT_DIR$/lecture_02/initials.py" />
+        <option value="$PROJECT_DIR$/lecture_02/slicing.py" />
+        <option value="$PROJECT_DIR$/lecture_02/average_price.py" />
+        <option value="$PROJECT_DIR$/lecture_02/common_interests.py" />
+        <option value="$PROJECT_DIR$/lecture_02/people.json" />
+        <option value="$PROJECT_DIR$/lecture_02/matchmaking.py" />
       </list>
     </option>
   </component>
@@ -136,7 +151,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,12 +165,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Python-Dev-old" />
+              <option name="myItemId" value="Softuni-Python3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Softuni-Python3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Softuni-Python3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lecture_02" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,88 +193,88 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python-Dev-old" />
   </component>
-  <component name="RunManager" selected="Python.insta_downloader">
-    <configuration default="false" name="square" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.matchmaking">
+    <configuration default="false" name="strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Softuni-Python3" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_01/square.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_02/slicing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="missing_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="initials" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Dev-old/exam/208" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Dev-old" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py" />
+      <module name="Softuni-Python3" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_02/initials.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="most_sells" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="average_price" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Dev-old/date_time_task" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Dev-old" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Dev-old/date_time_task/most_sells.py" />
+      <module name="Softuni-Python3" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_02/average_price.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="draw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="common_interests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Dev-old/oop_tasks" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Dev-old" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" />
+      <module name="Softuni-Python3" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_02/common_interests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="insta_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="matchmaking" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Dev-old" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
+      <module name="Softuni-Python3" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_02/matchmaking.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -385,19 +414,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.square" />
-      <item index="1" class="java.lang.String" itemvalue="Python.missing_data" />
-      <item index="2" class="java.lang.String" itemvalue="Python.most_sells" />
-      <item index="3" class="java.lang.String" itemvalue="Python.draw" />
-      <item index="4" class="java.lang.String" itemvalue="Python.insta_downloader" />
+      <item index="0" class="java.lang.String" itemvalue="Python.strings" />
+      <item index="1" class="java.lang.String" itemvalue="Python.initials" />
+      <item index="2" class="java.lang.String" itemvalue="Python.average_price" />
+      <item index="3" class="java.lang.String" itemvalue="Python.common_interests" />
+      <item index="4" class="java.lang.String" itemvalue="Python.matchmaking" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.insta_downloader" />
-        <item index="1" class="java.lang.String" itemvalue="Python.draw" />
-        <item index="2" class="java.lang.String" itemvalue="Python.most_sells" />
-        <item index="3" class="java.lang.String" itemvalue="Python.square" />
-        <item index="4" class="java.lang.String" itemvalue="Python.missing_data" />
+        <item index="0" class="java.lang.String" itemvalue="Python.matchmaking" />
+        <item index="1" class="java.lang.String" itemvalue="Python.common_interests" />
+        <item index="2" class="java.lang.String" itemvalue="Python.average_price" />
+        <item index="3" class="java.lang.String" itemvalue="Python.initials" />
+        <item index="4" class="java.lang.String" itemvalue="Python.strings" />
       </list>
     </recent_temporary>
   </component>
@@ -426,19 +455,38 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3312034" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37593183" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37593183" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3312034" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37593183" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19635417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -456,239 +504,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/208/city-temperature-data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/square.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/drawing_loop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/hills.py" />
-    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/humansize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/thanker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/chess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/drawing_loop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/chess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/chess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/olympics.py" />
-    <entry file="file://$PROJECT_DIR$/lecture_01/chess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/humansize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2016.1/system/python_stubs/-1247971764/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="3631" column="26" selection-start-line="3631" selection-start-column="26" selection-end-line="3631" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/hills.py" />
-    <entry file="file://$PROJECT_DIR$/lecture_01/drawing_loop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/square.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/demo_turtle_01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/303/sales.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/208/city-temperature-data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/301/car.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/206/fridge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/205/anagrams.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/204/min_price.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/201/currencies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/200/cesar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/104/triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/103/flask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice_exam/102/str_count.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/207/rakia.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -710,24 +530,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/date_time_task/date_and_time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/303/unique_sales.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/thanker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -745,35 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/date_time_task/most_sells.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/input_files.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,9 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,18 +576,290 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/humansize.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/avg_price.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/initials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/sets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/sys_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/date_time_task/date_and_time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/date_time_task/most_sells.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/files_csv_task/file_tasks/catalog_full.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/files_csv_task/file_tasks/catalog_sample.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-688">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/searching_task/error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/searching_task/find.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_01/chess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural4-rules.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural5-rules.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/fibonacci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dive-Into-Python3/plural5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/thanker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_05.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_06.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Programming-Basics/exam_17_07_2016/solution_04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_02/slicing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_02/initials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_02/people.json" />
+    <entry file="file://$PROJECT_DIR$/lecture_02/average_price.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_02/common_interests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_02/matchmaking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#9#2495#0" expanded="false" />
+            <marker date="1468923294994" expanded="true" signature="9:2495" ph="..." />
           </folding>
         </state>
       </provider>
