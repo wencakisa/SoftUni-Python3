@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e832c8c-5784-4c92-bf7f-0d9c2ec8d57e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_02/slicing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/avg_price.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/avg_price.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/initials.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/initials.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/strings.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/strings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt" afterPath="$PROJECT_DIR$/../Python-Dev-old/facebook_thanker/access_token.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/files_csv_task/files.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/searching_task/error.log" afterPath="$PROJECT_DIR$/../Python-Dev-old/searching_task/error.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/searching_task/find.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/searching_task/find.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/url_requests/currency_convertor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" afterPath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_02/matchmaking.py" afterPath="$PROJECT_DIR$/lecture_02/matchmaking.py" />
     </list>
     <ignored path="Softuni-Python3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,16 +23,13 @@
     <favorites_list name="Softuni-Python3" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="matchmaking.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lecture_02/matchmaking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding>
-                <element signature="e#9#2495#0" expanded="false" />
-                <marker date="1468923294994" expanded="true" signature="9:2495" ph="..." />
-              </folding>
+            <state relative-caret-position="309">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -185,7 +169,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,18 +438,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3312034" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37593183" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37593183" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -817,6 +800,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lecture_02/slicing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -824,17 +814,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_02/initials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_02/people.json" />
     <entry file="file://$PROJECT_DIR$/lecture_02/average_price.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
+        <state relative-caret-position="396">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
@@ -846,21 +828,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/beginner_tasks/matchmaking.py">
+    <entry file="file://$PROJECT_DIR$/lecture_02/initials.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_02/people.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1483">
+          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_02/matchmaking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="e#9#2495#0" expanded="false" />
-            <marker date="1468923294994" expanded="true" signature="9:2495" ph="..." />
-          </folding>
+        <state relative-caret-position="309">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
