@@ -13,11 +13,11 @@ def main():
     print(slice_after_substring(sentence_2, substring))
 
 
-def slice_after_index(string, index):
+def slice_after_index(string: str, index: int) -> str:
     return string[:index] + '...'
 
 
-def slice_after_substring(string, substring):
+def slice_after_substring(string: str, substring: str) -> str:
     return string[re.search(r'\b{}\b'.format(substring), string).span()[1]:].strip()
 
 if __name__ == '__main__':
