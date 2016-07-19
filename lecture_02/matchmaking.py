@@ -1,107 +1,18 @@
-PEOPLE = [
-    {
-        'name': "Мария",
-        'interests': ['пътуване', 'танци', 'плуване', 'кино'],
-        'age': 24,
-        'gender': "female",
-        "ex": ["Кирил", "Петър"],
-    },
-    {
-        'name': "Диана",
-        'interests': ['мода', 'спортна стрелба', 'четене', 'скандинавска поезия'],
-        'age': 21,
-        'gender': "female",
-        "ex": [],
-    },
-    {
-        'name': "Дарина",
-        'interests': ['танци', 'покер', 'история', 'софтуер'],
-        'age': 34,
-        'gender': "female",
-        "ex": ["Борис"],
-    },
-    {
-        'name': "Лилия",
-        'interests': ['покер', 'автомобили', 'танци', 'кино'],
-        'age': 36,
-        'gender': "female",
-        "ex": [],
-    },
-    {
-        'name': "Галя",
-        'interests': ['пътуване', 'автомобили', 'плуване', 'баскетбол'],
-        'age': 18,
-        'gender': "female",
-        "ex": ['Димитър'],
-    },
-    {
-        'name': "Валерия",
-        'interests': ['плуване', 'покер', 'наука', 'скандинавска поезия'],
-        'age': 27,
-        'gender': "female",
-        "ex": [],
-    },
-    {
-        'name': "Ина",
-        'interests': ['кино', 'лов със соколи', 'пътуване', 'мода'],
-        'age': 20,
-        'gender': "female",
-        "ex": [],
-    },
-    {
-        'name': "Кирил",
-        'interests': ['баскетбол', 'автомобили', 'кино', 'наука'],
-        'age': 19,
-        'gender': "male",
-        'ex': ["Мария"],
-    },
-    {
-        'name': "Георги",
-        'interests': ['автомобили', 'футбол', 'плуване', 'танци'],
-        'age': 32,
-        'gender': "male",
-        'ex': [],
-    },
-    {
-        'name': "Андрей",
-        'interests': ['футбол', 'скандинавска поезия', 'история', 'танци'],
-        'age': 26,
-        'gender': "male",
-        'ex': ["Мария"],
-    },
-    {
-        'name': "Емил",
-        'interests': ['летене', 'баскетбол', 'софтуер', 'наука'],
-        'age': 34,
-        'gender': "male",
-        'ex': ['Дарина'],
-    },
-    {
-        'name': "Димитър",
-        'interests': ['футбол', 'лов със соколи', 'автомобили', 'баскетбол'],
-        'age': 22,
-        'gender': "male",
-        'ex': ['Галя'],
-    },
-    {
-        'name': "Петър",
-        'interests': ['пътуване', 'покер', 'баскетбол', 'лов със соколи'],
-        'age': 23,
-        'gender': "male",
-        'ex': ["Мария"],
-    },
-    {
-        'name': "Калоян",
-        'interests': ['кино', 'покер', 'пътуване', 'автомобили'],
-        'age': 29,
-        'gender': "male",
-        'ex': [],
-    },
-]
+import json
+
+"""
+    The data about people is in another file named 'people.json'
+
+    "Because code is code, and data is data."
+           - Mike Pilgrim, 'Dive Into Python 3'
+"""
 
 
 def main():
-    fitting_couples = get_fitting_couples(PEOPLE)
+    input_filename = 'people.json'
+    people = load_people_data(input_filename)
+
+    fitting_couples = get_fitting_couples(people)
 
     for male_info, female_info, common_interests in fitting_couples:
         male_name, male_age = male_info
@@ -114,7 +25,33 @@ def main():
         ))
 
 
+def load_people_data(input_filename: str) -> list:
+    """
+    Parses JSON file into Python list
+    :param input_filename: the name of the file that contains the information about people. (Format: '*.json')
+    :return: data parsed into Python list
+    """
+
+    with open(input_filename, encoding='utf-8') as f:
+        return json.load(f)
+
+
 def get_fitting_couples(people: list) -> list:
+    """
+    Checks whether two people are OK to be a couple.
+    Conditions:
+        -> To have at least one common interest
+        -> Their age difference must not be more than 6 years
+        -> They mustn't have been together before
+    :param people: List, containing dictionaries, consisting of information about each person.
+    :return: A list from tuples.
+
+            Each tuple contains three other tuples:
+                -> tuple from male's name and age
+                -> tuple from female's name and age
+                -> tuple containing the common interests between them
+    """
+
     fitting_couples = []
 
     males = [person for person in people if person.get('gender') == 'male']
@@ -127,9 +64,7 @@ def get_fitting_couples(people: list) -> list:
             female_name, female_age, female_interests = female.get('name'), female.get('age'), female.get('interests')
 
             common_interests = tuple(set(male_interests).intersection(female_interests))
-
             age_difference = abs(male_age - female_age)
-
             ex_partners = male_name in female.get('ex') or female_name in male.get('ex')
 
             if common_interests and age_difference <= 6 and not ex_partners:
