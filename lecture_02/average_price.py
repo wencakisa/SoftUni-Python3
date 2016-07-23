@@ -1,3 +1,6 @@
+MIN_PRICES = 4
+
+
 def main():
     prices = []
 
@@ -6,15 +9,17 @@ def main():
             price = float(input('Enter a price (or \'stop\'): '))
             prices.append(price)
         except ValueError:
-            if len(prices) < 4:
-                print('Enter at least 4 prices...')
+            if len(prices) < MIN_PRICES:
+                print('Enter at least {} prices...'.format(MIN_PRICES))
             else:
                 break
 
     without_min_and_max = remove_min_and_max(prices)
 
     if without_min_and_max:
-        print('Average price is: {}'.format(sum(without_min_and_max) / len(without_min_and_max)))
+        print('Min price: {:.2f}'.format(min(without_min_and_max)))
+        print('Max price: {:.2f}'.format(max(without_min_and_max)))
+        print('Average price is: {:.2f}'.format(sum(without_min_and_max) / len(without_min_and_max)))
     else:
         print('List is empty.')
 

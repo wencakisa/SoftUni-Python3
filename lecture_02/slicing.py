@@ -3,14 +3,11 @@ import re
 
 def main():
     sentence = 'Python 3 can do so much, but I have to learn now.'
-    index = 10
-
+    index = 13
+    substring = 'can'
     print(slice_after_index(sentence, index))
 
-    sentence_2 = 'This is soo difficult, I prefer playing WoW.'
-    substring = 'soo'
-
-    print(slice_after_substring(sentence_2, substring))
+    print(slice_after_substring(sentence, substring))
 
 
 def slice_after_index(string: str, index: int) -> str:
@@ -18,7 +15,9 @@ def slice_after_index(string: str, index: int) -> str:
 
 
 def slice_after_substring(string: str, substring: str) -> str:
-    return string[re.search(r'\b{}\b'.format(substring), string).span()[1]:].strip()
+    match = re.search(r'\b{}\b'.format(substring), string)
+
+    return string[match.span()[1]:] if match else string
 
 if __name__ == '__main__':
     main()
