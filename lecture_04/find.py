@@ -1,11 +1,12 @@
+from os.path import expanduser
+
 import sys
 import glob
-from os.path import expanduser
 
 
 def main():
     if len(sys.argv) != 3:
-        print('Usage: <script> <path_to_search_in> <file_to_search>')
+        print('Usage: python3 find.py <path_to_search_in> <file_to_search>')
         return 1
 
     path, filename = expanduser(sys.argv[1]), sys.argv[2]
