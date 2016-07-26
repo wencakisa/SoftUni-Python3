@@ -1,5 +1,6 @@
-from lecture_03.avg_price_file import load_data, get_average_price
 from collections import defaultdict
+
+from lecture_03.avg_price_file import load_data, get_average_price
 
 
 def main():

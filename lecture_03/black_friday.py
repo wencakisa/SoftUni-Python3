@@ -1,6 +1,7 @@
-from lecture_03.avg_price_file import load_data
 import os
 from random import randint
+
+from lecture_03.avg_price_file import load_data
 
 
 def main():
