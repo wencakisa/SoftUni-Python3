@@ -25,8 +25,8 @@ def main():
     ))
 
 
-def load_sales_data(input_filename: str) -> dict:
-    sales_data = {}
+def load_sales_data(input_filename: str) -> defaultdict(int):
+    sales_data = defaultdict(int)
 
     with open(input_filename) as f:
         for line_index, line in enumerate(csv.reader(f), start=1):
@@ -34,49 +34,46 @@ def load_sales_data(input_filename: str) -> dict:
                 print('Invalid line detected, so ignored. Check error.log')
                 logging.warning('Invalid line: {}'.format(line_index))
             else:
-                datetime = iso8601.parse_date(line[0])
+                dt = iso8601.parse_date(line[0]).replace(minute=0, second=0)
                 price = float(line[1])
 
-                sales_data[datetime] = price
+                sales_data[dt] += price
 
     return sales_data
 
 
 def get_most_sales_date(sales_data: dict) -> tuple:
-    sales_data_sum = defaultdict(list)
+    date_sales_sum = defaultdict(int)
 
-    for datetime, price in sales_data.items():
-        sales_data_sum[datetime.date()].append(price)
+    for dt, prices_sum in sales_data.items():
+        date_sales_sum[dt.date()] += prices_sum
 
-    sales_data_sum = {date: sum(prices) for date, prices in sales_data_sum.items()}
+    most_date_sales_amount = max(date_sales_sum.values())
 
-    max_price = max(sales_data_sum.values())
-
-    for date, price in sales_data_sum.items():
-        if price == max_price:
-            return date, price
+    for d, amount in date_sales_sum.items():
+        if amount == most_date_sales_amount:
+            return d, amount
 
 
 def get_most_sales_hour(sales_data: dict) -> tuple:
-    hour_sales_sum = defaultdict(dict)
+    hour_sales_sum = {}
+    dates = set([dt.date() for dt in sales_data.keys()])
 
-    dates = set([datetime.date() for datetime in sales_data.keys()])
+    for d in dates:
+        hour_dict = {}
 
-    for date in dates:
-        hour_dict = defaultdict(list)
+        for dt, prices_sum in sales_data.items():
+            if dt.date() == d:
+                hour_dict[dt.hour] = prices_sum
 
-        for datetime, price in sales_data.items():
-            if datetime.date() == date:
-                hour_dict[datetime.hour].append(price)
+        hour_sales_sum[d] = hour_dict
 
-        hour_sales_sum[date] = {hour: sum(prices) for hour, prices in hour_dict.items()}
+    most_hour_sales_amount = max(max(hour_dict.values()) for hour_dict in hour_sales_sum.values())
 
-    most_sales_hour_amount = max(max(hour_dict.values()) for hour_dict in hour_sales_sum.values())
-
-    for date, hour_dict in hour_sales_sum.items():
+    for d, hour_dict in hour_sales_sum.items():
         for hour, amount in hour_dict.items():
-            if amount == most_sales_hour_amount:
-                return date, hour, amount
+            if amount == most_hour_sales_amount:
+                return d, hour, amount
 
 if __name__ == '__main__':
     main()
