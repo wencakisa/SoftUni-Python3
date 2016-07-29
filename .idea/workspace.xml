@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e832c8c-5784-4c92-bf7f-0d9c2ec8d57e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_05/analyze.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_05/entries.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_05/resources/catalog.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_05/resources/sales-100K.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_05/resources/sales-10K.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_05/resources/sales-1M.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_04/find.py" afterPath="$PROJECT_DIR$/lecture_04/find.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_04/most_sales.py" afterPath="$PROJECT_DIR$/lecture_04/most_sales.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_04/sales.csv" afterPath="$PROJECT_DIR$/lecture_04/sales.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/analyze.py" afterPath="$PROJECT_DIR$/lecture_05/analyze.py" />
     </list>
     <ignored path="Softuni-Python3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +27,8 @@
       <file leaf-file-name="analyze.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lecture_05/analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="342">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -104,13 +95,13 @@
         <option value="$PROJECT_DIR$/lecture_05/sales-10K.csv" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
         <option value="$PROJECT_DIR$/lecture_05/analyze_functions.py" />
-        <option value="$PROJECT_DIR$/lecture_05/analyze.py" />
         <option value="$PROJECT_DIR$/lecture_05/print_functions.py" />
         <option value="$PROJECT_DIR$/lecture_05/utils.py" />
         <option value="$PROJECT_DIR$/lecture_05/entry_classes.py" />
         <option value="$PROJECT_DIR$/lecture_05/sales.py" />
         <option value="$PROJECT_DIR$/lecture_05/catalog.py" />
         <option value="$PROJECT_DIR$/lecture_04/most_sales.py" />
+        <option value="$PROJECT_DIR$/lecture_05/analyze.py" />
       </list>
     </option>
   </component>
@@ -210,7 +201,7 @@
       <recent name="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/figures" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.most_sales">
+  <component name="RunManager" selected="Python.analyze">
     <configuration default="false" name="find" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,24 +266,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Softuni-Python3" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_05/analyze.py" />
-      <option name="PARAMETERS" value="./resources/catalog.csv ./resources/sales-10K.csv" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="analyze (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python-Dev-old/practice" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python-Dev-old" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python-Dev-old/practice/analyze.py" />
-      <option name="PARAMETERS" value="catalog.csv sales-10K.csv" />
+      <option name="PARAMETERS" value="./resources/catalog.csv ./resources/sales-100K.csv" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -430,20 +404,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.find" />
       <item index="1" class="java.lang.String" itemvalue="Python.most_sales" />
       <item index="2" class="java.lang.String" itemvalue="Python.draw" />
       <item index="3" class="java.lang.String" itemvalue="Python.analyze" />
-      <item index="4" class="java.lang.String" itemvalue="Python.analyze (1)" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.most_sales" />
-        <item index="1" class="java.lang.String" itemvalue="Python.analyze" />
-        <item index="2" class="java.lang.String" itemvalue="Python.analyze (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.find" />
-        <item index="4" class="java.lang.String" itemvalue="Python.draw" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.analyze" />
+        <item index="1" class="java.lang.String" itemvalue="Python.most_sales" />
+        <item index="2" class="java.lang.String" itemvalue="Python.find" />
+        <item index="3" class="java.lang.String" itemvalue="Python.draw" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +445,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38609627" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38609627" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -903,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_05/analyze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="342">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
