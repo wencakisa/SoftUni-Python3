@@ -2,7 +2,6 @@ from decimal import Decimal, InvalidOperation
 from datetime import timezone
 
 import iso8601
-from lecture_05.entries import Item
 
 EXPECTED_COLUMNS = 5
 
@@ -13,32 +12,19 @@ COLUMN_ITEM_TIMESTAMP = 3
 COLUMN_ITEM_PRICE = 4
 
 
+class Item:
+    def __init__(self, item_id, country, city, timestamp, price):
+        self.item_id = item_id
+        self.country = country
+        self.city = city
+        self.timestamp = timestamp
+        self.price = price
+
+    def __repr__(self):
+        return '{}: {}'.format(self.__class__, str(self.__dict__))
+
+
 def load_sales_data(gen) -> list:
-    """
-    Expected columns in catalog file:
-
-        1. Идентификационен номер на артикула;
-        2. Държава, в която е била извършена продажбата (ISO code)
-        3. Име на град, в която е била извършена продажбата;
-        4. Дата/час на продажбата с timezone, във формат ISO8601;
-        5. Цена на продажбата (цените на един и същ артикул в различните държави са различни)
-
-
-    Result:
-        [
-            Item(
-                item_id="561712",
-                country="ES",
-                city="Murcia",
-                ts="2015-02-11T17:14:05+01:00:,
-                price="43.21"
-            )
-            {
-                ...
-            }
-            ..
-        ]
-    """
     return [
         Item(
             item_id=row[COLUMN_ITEM_ID],

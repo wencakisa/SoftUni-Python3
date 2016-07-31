@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import Counter
 
 
 def get_summary(sales: list) -> tuple:
@@ -10,8 +10,8 @@ def get_summary(sales: list) -> tuple:
     return total_sales_count, total_sales_amount, avg_sales_amount, min(sale_timestamps), max(sale_timestamps)
 
 
-def get_sales_by_category(catalog: dict, sales: list) -> defaultdict(int):
-    sales_by_category = defaultdict(int)
+def get_sales_by_category(catalog: dict, sales: list) -> Counter:
+    sales_by_category = Counter()
 
     for sale_item in sales:
         catalog_entry = catalog.get(sale_item.item_id, None)
@@ -22,8 +22,8 @@ def get_sales_by_category(catalog: dict, sales: list) -> defaultdict(int):
     return sales_by_category
 
 
-def get_sales_by_city(sales: list) -> defaultdict(int):
-    sales_by_city = defaultdict(int)
+def get_sales_by_city(sales: list) -> Counter:
+    sales_by_city = Counter()
 
     for sale_item in sales:
         city = '{} ({})'.format(sale_item.city, sale_item.country)
@@ -33,8 +33,8 @@ def get_sales_by_city(sales: list) -> defaultdict(int):
     return sales_by_city
 
 
-def get_sales_by_timestamp(sales: list) -> defaultdict(int):
-    sales_by_timestamp = defaultdict(int)
+def get_sales_by_timestamp(sales: list) -> Counter:
+    sales_by_timestamp = Counter()
 
     for sale_item in sales:
         timestamp = sale_item.timestamp.replace(minute=0, second=0).strftime('%Y-%m-%d %H:%M')

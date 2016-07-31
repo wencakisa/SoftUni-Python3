@@ -1,9 +1,11 @@
-from collections import defaultdict, Counter
-
-from lecture_05.utils import get_title_lines
+from collections import Counter
 
 
-def print_summary(summary: tuple) -> dict:
+def get_title_lines(title: str) -> str:
+    return '-' * len(title)
+
+
+def print_summary(summary: tuple) -> None:
     title = 'Обобщение'
     total_count, total_amount, avg_amount, start_ts, end_ts = summary
 
@@ -24,8 +26,8 @@ def print_summary(summary: tuple) -> dict:
            ))
 
 
-def print_sales_by_criteria(title: str, sales_to_display: defaultdict(int), top: int=5) -> None:
-    top_sales = Counter(sales_to_display).most_common(top)
+def print_sales_by_criteria(title: str, sales_to_display: Counter, top: int=5) -> None:
+    top_sales = sales_to_display.most_common(top)
 
     max_padding = max(len(category_name) for category_name, _ in top_sales)
 
