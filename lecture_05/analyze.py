@@ -4,7 +4,7 @@ import csv
 
 from lecture_05.catalog import load_catalog_data
 from lecture_05.sales import load_sales_data, test_sales_data
-from lecture_05.analyze_functions import get_summary, get_sales_by_category, get_sales_by_city, get_sales_by_timestamp
+from lecture_05.analyze_functions import get_summary, get_sales_by_criteria
 from lecture_05.print_functions import print_summary, print_sales_by_criteria
 
 
@@ -20,13 +20,7 @@ def main():
         if test_sales_data(sales):
             print_summary(get_summary(sales))
 
-            sales_to_display = [
-                ('Сума на продажби по категории', get_sales_by_category(catalog, sales)),
-                ('Сума на продажби по градове', get_sales_by_city(sales)),
-                ('Часове с най-голяма сума продажби', get_sales_by_timestamp(sales))
-            ]
-
-            for criteria_title, sales_by_criteria in sales_to_display:
+            for criteria_title, sales_by_criteria in get_sales_by_criteria(catalog, sales):
                 print_sales_by_criteria(title=criteria_title, sales_to_display=sales_by_criteria)
                 print('')
 
