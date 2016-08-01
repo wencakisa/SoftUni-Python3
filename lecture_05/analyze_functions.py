@@ -1,8 +1,8 @@
 from collections import Counter
 from typing import List, Dict, Tuple
 
-from sales import Item
-from catalog import CatalogEntry
+from lecture_05.sales import Item
+from lecture_05.catalog import CatalogEntry
 
 
 def get_summary(sales: List[Item]) -> Tuple:

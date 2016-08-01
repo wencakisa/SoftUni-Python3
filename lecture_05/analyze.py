@@ -2,10 +2,10 @@ import sys
 import os
 import csv
 
-from catalog import load_catalog_data
-from sales import load_sales_data, test_sales_data
-from analyze_functions import get_summary, get_sales_by_criteria
-from print_functions import print_summary, print_sales_by_criteria
+from lecture_05.catalog import load_catalog_data
+from lecture_05.sales import load_sales_data, test_sales_data
+from lecture_05.analyze_functions import get_summary, get_sales_by_criteria
+from lecture_05.print_functions import print_summary, print_sales_by_criteria
 
 
 def main():
