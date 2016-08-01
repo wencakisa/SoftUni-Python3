@@ -1,3 +1,5 @@
+from typing import Dict
+
 EXPECTED_COLUMNS = 8
 
 COLUMN_ITEM_ID = 0
@@ -8,16 +10,16 @@ COLUMN_ITEM_GENDER = 7
 
 class CatalogEntry:
     def __init__(self, item_id, sport, category_name, gender):
-        self.item_id = item_id
-        self.sport = sport
-        self.category_name = category_name
-        self.gender = gender
+        self.item_id = str(item_id)
+        self.sport = str(sport)
+        self.category_name = str(category_name)
+        self.gender = str(gender)
 
     def __repr__(self):
-        return '{}: {}'.format(self.__class__, str(self.__dict__))
+        return '{}: {}'.format(self.__class__.__name__, str(self.__dict__))
 
 
-def load_catalog_data(gen) -> dict:
+def load_catalog_data(gen) -> Dict[str, CatalogEntry]:
     """
     Expected columns in catalog file:
 

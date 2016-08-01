@@ -1,7 +1,11 @@
 from collections import Counter
+from typing import List, Dict, Tuple
+
+from sales import Item
+from catalog import CatalogEntry
 
 
-def get_summary(sales: list) -> tuple:
+def get_summary(sales: List[Item]) -> Tuple:
     total_sales_count = len(sales)
     total_sales_amount = sum(sale_item.price for sale_item in sales)
     avg_sales_amount = total_sales_amount / total_sales_count if total_sales_count else None
@@ -10,7 +14,7 @@ def get_summary(sales: list) -> tuple:
     return total_sales_count, total_sales_amount, avg_sales_amount, min(sale_timestamps), max(sale_timestamps)
 
 
-def get_sales_by_category(catalog: dict, sales: list) -> Counter:
+def get_sales_by_category(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> Counter:
     sales_by_category = Counter()
 
     for sale_item in sales:
@@ -22,7 +26,7 @@ def get_sales_by_category(catalog: dict, sales: list) -> Counter:
     return sales_by_category
 
 
-def get_sales_by_city(sales: list) -> Counter:
+def get_sales_by_city(sales: List[Item]) -> Counter:
     sales_by_city = Counter()
 
     for sale_item in sales:
@@ -33,7 +37,7 @@ def get_sales_by_city(sales: list) -> Counter:
     return sales_by_city
 
 
-def get_sales_by_timestamp(sales: list) -> Counter:
+def get_sales_by_timestamp(sales: List[Item]) -> Counter:
     sales_by_timestamp = Counter()
 
     for sale_item in sales:
@@ -44,7 +48,7 @@ def get_sales_by_timestamp(sales: list) -> Counter:
     return sales_by_timestamp
 
 
-def get_sales_by_gender(catalog: dict, sales: list) -> Counter:
+def get_sales_by_gender(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> Counter:
     sales_by_gender = Counter()
 
     for sale_item in sales:
@@ -56,7 +60,7 @@ def get_sales_by_gender(catalog: dict, sales: list) -> Counter:
     return sales_by_gender
 
 
-def get_sales_by_sport(catalog: dict, sales: list) -> Counter:
+def get_sales_by_sport(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> Counter:
     sales_by_sport = Counter()
 
     for sale_item in sales:
@@ -68,7 +72,7 @@ def get_sales_by_sport(catalog: dict, sales: list) -> Counter:
     return sales_by_sport
 
 
-def get_sales_by_criteria(catalog: dict, sales: list) -> list:
+def get_sales_by_criteria(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> List[Tuple[str, Counter]]:
     return [
         ('Сума на продажби по категории', get_sales_by_category(catalog, sales)),
         ('Сума на продажби по градове', get_sales_by_city(sales)),

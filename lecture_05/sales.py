@@ -1,5 +1,6 @@
 from decimal import Decimal, InvalidOperation
 from datetime import timezone
+from typing import List
 
 import iso8601
 
@@ -14,17 +15,17 @@ COLUMN_ITEM_PRICE = 4
 
 class Item:
     def __init__(self, item_id, country, city, timestamp, price):
-        self.item_id = item_id
-        self.country = country
-        self.city = city
+        self.item_id = str(item_id)
+        self.country = str(country)
+        self.city = str(city)
         self.timestamp = timestamp
         self.price = price
 
     def __repr__(self):
-        return '{}: {}'.format(self.__class__, str(self.__dict__))
+        return '{}: {}'.format(self.__class__.__name__, str(self.__dict__))
 
 
-def load_sales_data(gen) -> list:
+def load_sales_data(gen) -> List[Item]:
     """
     Expected columns in catalog file:
         1. Идентификационен номер на артикула;
@@ -62,7 +63,7 @@ def load_sales_data(gen) -> list:
     ]
 
 
-def test_sales_data(sales: list) -> bool:
+def test_sales_data(sales: List[Item]) -> bool:
     for sale_item in sales:
         try:
             sale_item.timestamp = iso8601.parse_date(sale_item.timestamp).astimezone(timezone.utc)
@@ -71,7 +72,7 @@ def test_sales_data(sales: list) -> bool:
             print(str(pe))
             return False
         except InvalidOperation:
-            print('Unable to parse decimal {}'.format(sale_item.price))
+            print('Unable to parse decimal "{}"'.format(sale_item.price))
             return False
 
     return True
