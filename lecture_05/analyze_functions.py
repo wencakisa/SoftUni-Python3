@@ -48,37 +48,11 @@ def get_sales_by_timestamp(sales: List[Item]) -> Counter:
     return sales_by_timestamp
 
 
-def get_sales_by_gender(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> Counter:
-    sales_by_gender = Counter()
-
-    for sale_item in sales:
-        catalog_entry = catalog.get(sale_item.item_id, None)
-        gender = catalog_entry.gender if catalog_entry else 'UNKNOWN'
-
-        sales_by_gender[gender] += sale_item.price
-
-    return sales_by_gender
-
-
-def get_sales_by_sport(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> Counter:
-    sales_by_sport = Counter()
-
-    for sale_item in sales:
-        catalog_entry = catalog.get(sale_item.item_id, None)
-        sport = catalog_entry.sport if catalog_entry else 'UNKNOWN'
-
-        sales_by_sport[sport] += sale_item.price
-
-    return sales_by_sport
-
-
 def get_sales_by_criteria(catalog: Dict[str, CatalogEntry], sales: List[Item]) -> List[Tuple[str, Counter]]:
     return [
         ('Сума на продажби по категории', get_sales_by_category(catalog, sales)),
         ('Сума на продажби по градове', get_sales_by_city(sales)),
-        ('Часове с най-голяма сума продажби', get_sales_by_timestamp(sales)),
-        ('Сума на продажби по пол', get_sales_by_gender(catalog, sales)),
-        ('Сума на продажби по спорт', get_sales_by_sport(catalog, sales))
+        ('Часове с най-голяма сума продажби', get_sales_by_timestamp(sales))
     ]
 
 if __name__ == '__main__':
