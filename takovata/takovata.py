@@ -11,9 +11,8 @@ def main():
     urls = get_lecture_urls()
 
     for index, url in enumerate(urls, start=1):
-        filename = 'lecture_{}.pdf'.format(index)
-        pw = PDFWriter(filename)
         url_full = urljoin(BASE, url)
+        filename = 'lecture_{}.html'.format(index)
         content = get_info(url_full)
 
         with open(filename, mode='w') as f:
@@ -32,21 +31,20 @@ def get_info(url_full: str):
     r = requests.get(url=url_full, cookies=COOKIES)
 
     soup = BeautifulSoup(r.text, 'html.parser')
-    print(soup)
 
-#     title = soup.find('h1', class_='title')
-#     content = soup.find('div', class_='content lecture-content fix-links')
-#
-#     return """<html>
-# <head>
-# <meta charset="utf-8">
-# </head>
-# <body>
-# {}
-# {}
-# </body>
-# </html>
-# """.format(title, content)
+    title = soup.find('h1', class_='title')
+    content = soup.find('div', class_='content lecture-content fix-links')
+
+    return """<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+{}
+{}
+</body>
+</html>
+""".format(title, content)
 
 if __name__ == '__main__':
     main()
