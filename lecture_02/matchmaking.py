@@ -1,11 +1,5 @@
 import json
-
-"""
-    The data about people is in another file named 'people.json'
-
-    "Because code is code, and data is data."
-           - Mike Pilgrim, 'Dive Into Python 3'
-"""
+import itertools
 
 
 def main():
@@ -26,57 +20,18 @@ def main():
 
 
 def load_people_data(input_filename: str) -> list:
-    """
-    Parses JSON file into Python list
-    :param input_filename: the name of the file that contains the information about people. (Format: '*.json')
-    :return: data parsed into Python list
-    """
-
     with open(input_filename, encoding='utf-8') as f:
         return json.load(f)
 
 
 def get_fitting_couples(people: list) -> list:
-    """
-    Checks whether two people are OK to be a couple.
-    Conditions:
-        -> To have at least one common interest
-        -> Their age difference must not be more than 6 years
-        -> They mustn't have been together before
-    :param people: List, containing dictionaries, consisting of information about each person.
-    :return: A list from tuples.
-
-            Each tuple contains three other tuples:
-                -> tuple from male's name and age
-                -> tuple from female's name and age
-                -> tuple containing the common interests between them
-    """
-
-    fitting_couples = []
-
-    males = [person for person in people if person.get('gender') == 'male']
-    females = [person for person in people if person.get('gender') == 'female']
-
-    for male in males:
-        male_name, male_age, male_interests = male.get('name'), male.get('age'), male.get('interests')
-
-        for female in females:
-            female_name, female_age, female_interests = female.get('name'), female.get('age'), female.get('interests')
-
-            common_interests = tuple(set(male_interests).intersection(female_interests))
-            age_difference = abs(male_age - female_age)
-            ex_partners = male_name in female.get('ex') or female_name in male.get('ex')
-
-            if common_interests and age_difference <= 6 and not ex_partners:
-                fitting_couples.append(
-                    (
-                        (male_name, male_age),
-                        (female_name, female_age),
-                        common_interests
-                    )
-                )
-
-    return fitting_couples
-
+    return [
+        ((p1['name'], p1['age']), (p2['name'], p2['age']), set(p1['interests']) & set(p2['interests']))
+        for p1, p2 in itertools.combinations(people, 2)
+        if p1['gender'] != p2['gender'] and
+        set(p1['interests']) & set(p2['interests']) and
+        abs(p1['age'] - p2['age']) <= 6 and
+        p1['name'] not in p2['ex']
+    ]
 if __name__ == '__main__':
     main()
