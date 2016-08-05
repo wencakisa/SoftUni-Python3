@@ -1,0 +1,581 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1 class="title">
+3. Функции и scope; Exceptions; Работа с файлове
+</h1>
+<div class="content lecture-content fix-links" data-fix-links-template="/student/lecture/assignment/%40/?back=%2Fstudent%2Flecture%2F568014ff131b1642fba73797%2F">
+<h2 id="-">Функции</h2>
+<h3 id="-">Дефиниране на функция</h3>
+<p>Функциите в Python се дефинират с ключовата дума <code>def</code>, след което следва името на функцията, опционални параметри и тялото на функцията.</p>
+<p>Пример:</p>
+<pre><code>def print_temperature(temp):
+    print(temp, 'C')
+</code></pre><p>Имената на функциите трябва да бъдат валиден идентификатор, тоест:</p>
+<ul>
+<li>имената на функциите може да съдържат само букви, цифри и _ - правилата са същите, както и за имена на променливи.</li>
+<li>имената на функциите НЕ може да започват с цифра;</li>
+</ul>
+<p>По конвенция е прието, че имената на функциите да се пишат в snake_case с малки букви</p>
+<p>Опитвайте се винаги да пишете кодa си така, че функциите да зависят единствено и само от параметрите, които са подадени, и да не променят състояния извън тялото на функцията - т.е. без странични ефекти.</p>
+<p>Ако дефинирате две или повече функции с <strong>едно и също име в един scope</strong>, активна ще остане само последната. Причините за това се крият в специфичния начин, по който работи Python.</p>
+<h3 id="-">Връщане на стойност</h3>
+<p>Функциите в Python могат да връщат резултат, използвайки ключовата дума <code>return</code>.</p>
+<pre><code>def convert_fahrenheit_to_celsius(deg_f):
+    return (deg_f - 32) / 1.8
+</code></pre><p>Важните неща за връщането на резултат от функциите са:</p>
+<ul>
+<li>Връщането не е задължително. Може да имаме функция, която не връща нищо. В този случай ако се опитате да присвоите резултатът на променлива, резултатът ще бъде <code>None</code>;</li>
+<li>Връщаната стойност може да бъде от всеки един възможен тип, поддържан от Python;</li>
+<li>След ключовата дума <code>return</code>, изпълнението на функцията се прекратява.</li>
+</ul>
+<h3 id="-">Връщане на "няколко стойности" от функция</h3>
+<p>В Python функциите могат да връщат само една стойност. Понякога, обаче, е по-удобно да върнем повече от една стойност. Ако искаме да направим функция, която дели целочислено две числа и връща едновременно резултата от целочисленото деление и остатъка, можем да върнем <code>tuple</code>:</p>
+<pre><code>def div_mod(number, divisor):   # по някаква причина вградената функция divmod не ни харесва :о)
+    result = number // divisor
+    modulus = number % divisor
+    return (result, modulus)    # връщаме tuple ;    може да се запише и без скобите - return result, modulus
+
+neshto = div_mod(13, 3)
+print(neshto)  # отпечатва върнатия tuple   -  (4, 1)
+
+# по-удобно
+r, m = div_mod(13, 3)
+print(r)   # отпечатва 4
+print(m)  # отпечатва 1
+</code></pre><p>Помните <code>enumerate()</code> и <code>dict.items()</code> от предишната лекция, нали ? :о)</p>
+<h3 id="-">Параметри</h3>
+<p>Функциите в Python могат да имат произволен брой параметри, и те могат да се използват САМО в тялото на функцията.</p>
+<pre><code>def bigger(param1, param2):
+    if param1 &gt; param2:
+        return param1
+    return param2
+
+print(bigger(10,15))  #  резутатът ще е 15
+</code></pre><h4 id="-">Параметри със стойност по подразбиране</h4>
+<p>В Python всеки един параметър може да има стойност по подразбиране. Тази стойност ще се използва, когато този параметър не е подаден при извикването на функцията.</p>
+<pre><code>def bigger(param1,param2=22):
+    if param1 &gt; param2:
+        return param1
+    return param2
+
+print(bigger(101)) #  резултатът ще е 101, защото param2 ще е със стойност 22
+</code></pre><h4 id="-">Именовани параметри</h4>
+<p>Python позволява да подаваме параметрите по име - не само по позиция.</p>
+<p>Например, имаме функция <code>send_mail()</code>, която в други езици бихме извикали така:</p>
+<pre><code>send_email(
+    "Лекция за функции - за курса по Python",
+    "Здрасти, готови ли сме с лекцията за функции, или още не сме я написали?",
+    "gatakka@example.com",
+    "boris.chervenkov@example.com",
+    "gatakka@example.com",
+    None
+)
+</code></pre><p>в примера по-горе имаме 3 последователни параметъра, които съдържат email адрес, и от пръв прочит въобще не е ясно кой параметър за какво служи. За да разберем, или трябва да си помогнем с IDE-то, или да четем документация, или в краен случай да ровим в кода на функцията (ако е наличен, разбира се); с две думи губим си времето.</p>
+<p>Същата функция в Python може да се извика и така:</p>
+<pre><code>send_email(
+    subject="Лекция за функции - за курса по Python",
+    body="Здрасти, готови ли сме с лекцията за функции, или още не сме я написали?",
+    from_email="gatakka@example.com",
+    to_email="boris.chervenkov@example.com",
+    cc_email="gatakka@example.com",
+    attachments=None
+)
+</code></pre><p>Доста по-ясно, нали?</p>
+<p>Използването на именовани параметри е изключително удобно, води до много лесно четим и "self-documenting" код. Съветваме Ви да ги използвате често - ще ни благодарите по-късно :о)</p>
+<p>Друго предимство е, че ако в бъдеще добавим нов параметър към функцията, старият код ще работи безпроблемно, понеже параметрите ще се определят от името, а не от позицията.</p>
+<p>Също така, чрез използването на именовани параметри премахваме нуждата от спазване на точно определена последователност при подаването на им.</p>
+<pre><code>def function(param1 , param2):
+    print(param1)  #  param1 е 33, нищо че е подаден като 2-ри параметър
+    print(param2)  #  param2 е 10, нищо че е подаден като 1-ви параметър
+
+function(param2 = 10 , param1 = 33)
+</code></pre><p>Именованите параметри могат да работят със стойности по подразбиране:</p>
+<pre><code>def function(param1 = 8 , param2 = 13):
+    print(param1) #  param1 е 8, защото не е подаден при извикване на функцията
+    print(param2) #  param2 е 10, защото е подаден при извикване на функцията
+
+function(param2 = 10)
+</code></pre><p>Може да комбинираме позиционни и именувани параметри:</p>
+<pre><code>def function(param1 = -1 , param2 = 13):
+    print(param1) #  param1 е 10
+    print(param2) #  param2 е 87
+
+function(10,param2=87)
+</code></pre><p>Когато описвате параметри със стойност по подразбиране, е задължително те да се намират <strong>СЛЕД</strong> параметрите без стойност по подразбиране</p>
+<pre><code>def function(param1 , param2 = 20 , param3 = True): #  вярно
+    . . . 
+
+def function(param2 = 20 , param1 , param3 = True):  # грешно, МНОГО грешно
+    . . .
+</code></pre><h4 id="-args-kwargs-">Променлив брой аргументи <code>*args</code> и <code>**kwargs</code></h4>
+<p>Функциите в Python могат да имат и променлив брой позиционни и именовани параметри.</p>
+<p>За да укажем, че имаме променлив брой параметри, при дефинирането на функцията използваме <code>*args</code> като име на параметър.</p>
+<pre><code>def sum_numbers(*args):   # args ще бъде tuple, който ще съдържа стойностите на всички подадени позиционни параметри
+    total = 0
+    for n in args:
+        total += n
+    return total
+
+# ... и да - знаем, че в Python има много по-кратък начин да свършим същата работа :о)
+
+print(sum_numbers())
+print(sum_numbers(4))
+print(sum_numbers(5, 1, 49, 26, 45, 34, 3, 81))
+</code></pre><p>Важна в случая е <code>*</code> пред името на променливата - <code>args</code> е конвенция, и може да бъде произволен идентификатор - например <code>*slonove</code>. Ако нямате добра причина за друго име, използвайте <code>*args</code>.</p>
+<p>С именованите параметри нещата стоят по подобен начин:</p>
+<pre><code>def pretty_print_record(**kwargs):   # във функцията kwargs ще бъде обикновен dict
+    print("Record:")
+    for k, v in kwargs.items():
+        print("\t", k, "= ", v)
+
+pretty_print_record(name="Mercury", distance_au=0.387, diameter_km=4878)
+pretty_print_record(name="Venus", distance_au=0.723, diameter_km=12104)
+pretty_print_record(name="Earth", distance_au=1, diameter_km=12742, average_temp_c=7.2, atmosphere=["nitrogen", "oxygen", "argon"])
+pretty_print_record()
+</code></pre><p>Важна в случая е <code>**</code> пред името на променливата - <code>kwargs</code> е конвенция, и може да бъде произволен идентификатор - например <code>**krokodili</code>. Ако нямате добра причина за друго име, използвайте <code>**kwargs</code>.</p>
+<p>Тъй като <code>**kwargs</code> е обикновен dict, можем да подобрим малко функцията от по-горе:</p>
+<pre><code>def pretty_print_record(**kwargs):   # във функцията kwargs ще бъде обикновен dict
+    print(kwargs.pop('name', "Record"), ":")
+    for k, v in kwargs.items():
+        print("\t", k, "= ", v)
+
+pretty_print_record(name="Venus", distance_au=0.723, diameter_km=12104)
+</code></pre><h4 id="-args-kwargs-">Извикване на функции с <code>*args</code> &amp; <code>**kwargs</code></h4>
+<p>Понякога е полезно да извикате функция, като не знаете точния брой и вид параметри.</p>
+<p>В Python можете да го направите по следния начин:</p>
+<pre><code>def format_with_indent(format_string, *args, indent: int=None, indent_with: str=" ", **kwargs):
+    if indent is not None:
+        indent_str = indent_with * indent  # will multiply the indent string
+    else:
+        indent_str = ""
+    return indent_str + format_string.format(*args, **kwargs)
+
+...
+
+print(format_with_indent("Name: {}, Role: {role}", 'Boris', role='lecturer'))    
+
+print(format_with_indent("Name: {}, Role: {role}", 'Boris', role='lecturer', indent=4))    
+
+print(format_with_indent("Name: {}, Role: {role}", 'Boris', role='lecturer', indent=4, indent_with='-'))
+</code></pre><h4 id="annotations-">annotations за параметрите и връщаните от функциите стойности</h4>
+<p>Python е език с динамично типизиране на променливите. Понякога, обаче, не е излишно, ако можем да укажем какви типове данни очакваме, и какъв тип ще бъде върнатият от функцията резултат:</p>
+<pre><code>def convert_fahrenheit_to_celsius(deg_f: float) -&gt; float:
+    return (deg_f - 32) / 1.8
+</code></pre><p>Анотациите в Python дават възможност към параметри или резултат от функция да бъде приложена мета информация, като самият език <strong>не използва по никакъв начин тези анотации</strong> - те са предназначени изцяло за разработчиците.</p>
+<p>Обикновено, като конвенция, в анотациите се описват типове - int, str, float, и всеки друг тип, поддържан от езика.</p>
+<p>Въпреки, че в настоящия курс няма да ни се налага да ги използваме, е добре да знаете какво означават, ако ги видите в друг код.</p>
+<h4 id="-python-">функциите в Python са стойности</h4>
+<p>В Python когато дефинирате фукция, всъщност Python създава променлива, и й присвоява като стойност функцията, която сте дефинирали. Това означава, че можете да присвоите функцията на друг идентификатор, и да я извикате по същия начин, както бихте извикали и оригиналната функция.</p>
+<pre><code>def convert_fahrenheit_to_celsius(deg_f: float) -&gt; float:
+    return (deg_f - 32) / 1.8
+
+convert_elephants_to_penguins = convert_fahrenheit_to_celsius
+
+print(convert_fahrenheit_to_celsius(54))
+print(convert_elephants_to_penguins(54))
+</code></pre><p>Това е и причината ако дефинирате две или повече функции с едно и също име да "виждате" само последно дефинираната функция.</p>
+<pre><code>def convert_fahrenheit_to_celsius(deg_f):
+    return (deg_f - 32) / 1.8
+
+def convert_fahrenheit_to_celsius(deg_f):
+    return deg_f * 1241.5322   # seems legit :o)
+
+print(convert_fahrenheit_to_celsius(17))   #  резултат:   21106.047400000003
+</code></pre><hr>
+<h2 id="scope-">Scope на променливи</h2>
+<p>Подобно на останалите езици, Python работи с концепцията за <strong>scope</strong> (видимост). В Python променливите, дефинирани във функцията, са видими само във функцията.</p>
+<pre><code>def convert_fahrenheit_to_celsius(degrees_f):
+    degrees_c =  (degrees_f - 32) / 1.8
+    return degrees_c
+
+print(convert_fahrenheit_to_celsius(32))
+print(degrees_c)  # грешка - променливата degrees_c е дефинирана във функцията, и тук не съществува
+print(degrees_f)  # грешка - degrees_f е параметър на функцията, и тук не съществува
+</code></pre><hr>
+<p>Функциите имат достъп за четене до глобални променливи, което ни възможност да дефинираме "константи" в Python (обикновени променливи, които по конвенция са именовани с главни букви).</p>
+<pre><code>C_TO_F_DIFFERENCE = 32
+C_TO_F_DIVISOR = 1.8
+
+def convert_fahrenheit_to_celsius(degrees_f):
+    degrees_c =  (degrees_f - C_TO_F_DIFFERENCE) / C_TO_F_DIVISOR
+    return degrees_c
+
+print(convert_fahrenheit_to_celsius(32))
+</code></pre><hr>
+<p>Ако трябва да <strong>променим глобална променлива вътре във функция</strong> в Python, нещата стават малко по-различни.</p>
+<blockquote>
+<p><strong>Важно</strong> - Промяната на глобални променливи от функции в който и да е език за програмиране обикновено е много ясен индикатор, че нещо не е наред с архитектурата и/или логиката на Вашия код. Ако все пак Ви се наложи да го правите, задайте си въпроса "Наистина ли е необходимо?", и напишете в коментари в кода защо Ви се е наложило да го правите - особено ако работите заедно с други хора :о)</p>
+</blockquote>
+<pre><code>number_of_calculations_performed = 10  # глобална променлива
+
+def calculate(parameter1, parameter2):
+    ...
+    number_of_calculations_performed = number_of_calculations_performed + 1   # грешка
+
+calculate(4, 5)
+</code></pre><p>Грешката, която ще видите, ако стартирате кода по-горе, е <code>local variable 'number_of_calculations_performed' referenced before assignment</code>. Какво става? Както показахме в предишния пример, функцията би трябвало да има достъп до тази променлива ...</p>
+<p>Когато става въпрос за присвояване, Python работи само с променливи, които са дефинирани в локалния scope (например в текущата функция). Това е така, защото в Python променливите се създават, когато на идентификатор бъде присвоена стойност. Това можем да установим, ако променим малко кода от примера</p>
+<pre><code>number_of_calculations_performed = 10  # глобална променлива
+
+def calculate(parameter1, parameter2):
+    ...
+    number_of_calculations_performed = 1
+    ...
+    number_of_calculations_performed = number_of_calculations_performed + 1
+    print("Value within the calculate function: ", number_of_calculations_performed)
+
+print("Value before calling calculate: ", number_of_calculations_performed)
+calculate(4, 5)
+print("Value after calling calculate: ", number_of_calculations_performed)
+</code></pre><p>Резултатът от кода по-горе ще бъде:</p>
+<pre><code>Value before calling calculate:  10
+Value within the calculate function:  2
+Value after calling calculate:  10
+</code></pre><p>Когато във функцията присвоим стойност на идентификатора <code>number_of_calculations_performed</code>, създаваме <strong>локална променлива във функцията</strong>, която е съвсем отделна от глобалната променлива.</p>
+<p>Ако искаме да променим глобалната променлива, трябва да променим функцията като използваме ключовата дума <code>global</code>:</p>
+<pre><code>number_of_calculations_performed = 10  # глобална променлива
+
+def calculate(parameter1, parameter2):
+    global number_of_calculations_performed   # достъп за писане до глобалната променлива
+    ...
+    number_of_calculations_performed = number_of_calculations_performed + 1
+    print("Value within the calculate function: ", number_of_calculations_performed)
+
+print("Value before calling calculate: ", number_of_calculations_performed)
+calculate(4, 5)
+print("Value after calling calculate: ", number_of_calculations_performed)
+</code></pre><p>Резултатът от кода по-горе ще бъде:</p>
+<pre><code>Value before calling calculate:  10
+Value within the calculate function:  11
+Value after calling calculate:  11
+</code></pre><blockquote>
+<p><strong>Важно</strong> - Използването на <code>global</code> в който и да е език за програмиране обикновено е много ясен индикатор, че нещо не е наред с архитектурата и/или логиката на Вашия код. Опитвайте се да пишете кода така, че да не Ви се налага да използвате <code>global</code>.</p>
+</blockquote>
+<h2 id="exceptions">Exceptions</h2>
+<p>Exceptions (изключения) са популярен механизъм за обработка на грешки в модерните езици.</p>
+<p>При възникване на неочаквана грешка - например при опит за достъп до несъществуващ ключ в dict, или отваряне на несъществуващ файл, практиката в Python е да се "хвърли exception" / "raise exception", при което изпълнението на кода бива незабавно прекратено, и изпълнението се прехвърля към най-близкия блок за обработка на изключения.</p>
+<p>Пример:</p>
+<pre><code>people = [{'name': "Мария", 'gender': "female", }, {'name': "Калоян", 'gender': "male", }, ]
+
+...
+
+def print_person(person: dict):
+    print("{} ({}) is interested in {}".format(
+        person['name'],
+        person['age'],
+        ', '.join(person['interests'])
+    ))
+
+def print_people(people: list):
+    for person in people:
+        print_person(person)
+</code></pre><p>Ако се опитаме да извикаме функцията:</p>
+<pre><code>print_people(people)
+
+Traceback (most recent call last):
+  File "exception_not_handled.py", line 18, in &lt;module&gt;
+    print_people(people)
+  File "exception_not_handled.py", line 14, in print_people
+    print_person(person)
+  File "exception_not_handled.py", line 8, in print_person
+    person['age'],
+KeyError: 'age'
+</code></pre><p>Грешката възниква във функцията <code>print_person</code>, където не се обработват грешки. В този случай изпълнението на <code>print_person()</code> се прекратява, и се предава на функцията, която я е извикала - в случая <code>print_people</code>. В print_people също няма код за обработка на exception, и изпълнението на тази функция също се прекратява. Този процес се изпълнява докато не бъде достигнат код за обработка на exception-а, или докато не се стигне до стартирания файл, при което цялата програма спира изпълнението си.</p>
+<h3 id="-exceptions">Прихващане и обработка на exceptions</h3>
+<p>Прихващането на exceptions в Python става с помощта на <code>try</code> / <code>except</code> блок:</p>
+<pre><code>try:
+    print_person({"name": "Калоян"})
+except:
+    print("Непълни данни за отпечатване!")
+</code></pre><p>По този начин <code>except</code> блока ще бъде изпълнен само ако в тялото (между <code>try</code> и <code>except</code>) възникне exception. В примера по-горе показаният except блок ще прихване <strong>всички</strong> exceptions, които биха възникнали.</p>
+<p>По-добра практика, особено в големи проекти, е да прихващате само специфични exceptions, които можете да обработите, например:</p>
+<pre><code>try:
+    print_person({"name": "Калоян"})
+except KeyError as e:
+    print("Непълни данни за отпечатване: " + str(e))
+</code></pre><p>В този случай при възникване на KeyError ще се изпълни Вашия код за обработка на exception, а при друг exception изпълнението на функцията ще бъде прекратено по описания по-горе процес.</p>
+<h3 id="-exception">"Хвърляне" на exception</h3>
+<p>Вашият код също може да хвърля exception, с помощта на ключовата дума "raise"</p>
+<pre><code>def print_person(person: dict):
+    if 'age' not in person:
+        raise ValueError('Ключът "age" е задължителен в параметъра "person"')
+
+    print("{} ({}) is interested in {}".format(
+        person['name'],
+        person['age'],
+        ', '.join(person['interests'])
+    ))
+</code></pre><p>ValueError е стандартен exception от библиотеката на Python.</p>
+<p>За повече информация:</p>
+<ul>
+<li><a href="https://docs.python.org/3.5/tutorial/errors.html">Python tutorial: 8. Errors and Exceptions</a></li>
+<li><a href="https://docs.python.org/3/library/exceptions.html">Python docs: 5. Built-in Exceptions</a></li>
+</ul>
+<h2 id="-">Работа с текстови файлове</h2>
+<p>Текстовите файлове са един от основните механизми за съхранение и обмен на информация.</p>
+<p>Пример за изпечатване на съдържанието на текстов файл:</p>
+<pre><code>f = open('./directory/lecture.txt')
+for line in f:
+    print(line)
+f.close()
+</code></pre><p>Винаги, когато отворите файл, трябва да го затворите с <code>.close()</code>, след като свършите да четете или пишете в него. В Python има по-кратък и по-безопасен начин да работите с файлове:</p>
+<pre><code>with open('./directory/lecture.txt') as f:
+    for line in f:
+        print(line)
+</code></pre><p>Този код прави абсолютно същото, както предишния, но при него има гаранция, че файлът ще бъде затворен, след като се излезе от тялото на <code>with</code>, и е по-кратък и разбираем. Как и защо работи този код ще разберете в една от следващите лекции.</p>
+<p>За да <strong>презапишете съдържанието</strong> на файл, като <strong>елиминирате текущото му съдържание</strong>, при отваряне трябва да добавите допълнителен параметър - <code>w</code>:</p>
+<pre><code>with open('./directory/numbers.txt', 'w') as f:   # с 'w' съдържанието на файла ще бъде изтрито, и ще започнем в пишем на празен файл
+    for i in range(20):
+        f.write(str(i))
+        f.write("\n")
+</code></pre><p>За да <strong>допълните съдържание</strong> във файл, като <strong>запазите текущото му съдържание</strong>, при отваряне трябва да добавите допълнителен параметър - <code>а</code>:</p>
+<pre><code>with open('./directory/numbers.txt', 'а') as f:   # с 'а' съдържанието на файла се запази, и писането в този файл ще допълва в края на файла
+    for i in range(20):
+        f.write(str(i))
+        f.write("\n")
+</code></pre><p><strong>!! ВАЖНО !!</strong> <code>.write()</code> няма автоматично да добавя нови редове при писане във файла.</p>
+<p>Други полезни методи:</p>
+<ul>
+<li><code>.readline()</code> - прочита една линия от отворения файл, като връща str, който включва разделителя за нов ред</li>
+<li><code>.readlines()</code> - прочита всички линии от файла и връща <code>list</code> от <code>str</code> с всички прочетени линии. <strong>ако файлът е прекалено голям</strong>, с използването на този метод е възможно да заемете прекалено много памет;</li>
+<li><code>.read()</code> - без параметър прочита цялото съдържание на файла, и връща <code>str</code>. <strong>ако файлът е прекалено голям</strong>, с използването на този метод е възможно да заемете прекалено много памет;</li>
+<li><code>.read(max_chars)</code> - прочита най-много указания брой символи от файла, и връща <code>str</code></li>
+</ul>
+<h3 id="-1-5696b2ee6e8efb1652742bd7-"><a href="@5696b2ee6e8efb1652742bd7">Задача: 1. Намерете средната цена на продукт от текстови файл</a></h3>
+<h3 id="-2-5696b4346e8efb165374296d-"><a href="@5696b4346e8efb165374296d">Задача: 2. Намерете средната цена на продукт от текстови файл, групирана по критерии</a></h3>
+<h3 id="-3-5696b6036e8efb165374296e-"><a href="@5696b6036e8efb165374296e">Задача: 3. Променете цените в каталог</a></h3>
+<h2 id="-">Примери на живо</h2>
+<p>Примерите на живо са писани по време на лекцията, така че доста често са разхвърляни, и в тях са показани много неща. Използвайте ги, за да си припомните обясненията по време на лекцията.</p>
+<pre><code>def print_temperature(temp):
+    print(temp, 'C')
+
+def print_temperature(temp):
+    print(temp, 'Це')
+
+print_temperature(4643) # Це
+
+
+def convert_fahrenheit_to_celsius(deg_f):
+    return (deg_f - 32) / 1.8
+
+
+def print_temperature(temp):
+    print(temp, 'Це')
+
+print(convert_fahrenheit_to_celsius(45))
+
+result = print_temperature(355)
+print('&gt;&gt;&gt; ', result)
+
+# -------------------
+
+
+def div_mod(number, divisor):   # по някаква причина вградената функция divmod не ни харесва :о)
+    result = number // divisor
+    modulus = number % divisor
+    return (result, modulus)  # връщаме tuple ;    може да се запише и без скобите - return result, modulus
+
+neshto = div_mod(13, 3)
+print('Neshto: ', neshto)  # отпечатва върнатия tuple   -  (4, 1)
+
+# по-удобно
+r, m = div_mod(13, 3)
+print(r)   # отпечатва 4
+print(m)  # отпечатва 1
+
+# -------------------------------------
+
+variable = 1,  
+
+print(variable)
+print(len(variable))
+
+# ------------------------------------------
+
+def print_greeting(name="everybody"):
+    print("Hello, ", name)
+
+print_greeting("Boris")
+print_greeting()
+
+# ----------------------------------------------
+
+def send_email(subject,
+               to_email,
+               body=None,
+               from_email='boris@sentido.bg',
+               cc_email=None,
+               attachments=None):
+    print("Sending email from {} to {}".format(
+        from_email,
+        to_email
+    )
+)
+
+send_email(
+    from_email="gatakka@example.com",
+    to_email="boris.chervenkov@example.com",
+    subject="Лекция за функции - за курса по Python",
+    cc_email="gatakka@example.com",
+    body="Здрасти, готови ли сме с лекцията за функции, или още не сме я написали?",
+)
+
+send_email(
+    subject="Лекция за функции - за курса по Python",
+    to_email="boris.chervenkov@example.com",
+)
+
+# ----------------------------------------------
+
+def sum_numbers(*args):   # args ще бъде tuple, който ще съдържа стойностите на всички подадени позиционни параметри
+    total = 0
+    for n in args:
+        total += n
+    return total
+
+
+print(sum_numbers(1))
+print(sum_numbers(1, 3, 4, 5, 6, 7, 88))
+
+# -------------------------------------------------
+
+def pretty_print_record(**kwargs):   # във функцията kwargs ще бъде обикновен dict
+    print("Record:")
+    for k, v in kwargs.items():
+        print("\t", k, "= ", v)
+
+pretty_print_record(name="Mercury", distance_au=0.387, diameter_km=4878)
+pretty_print_record(name="Venus", distance_au=0.723, diameter_km=12104)
+pretty_print_record(name="Earth", distance_au=1, diameter_km=12742, average_temp_c=7.2, atmosphere=["nitrogen", "oxygen", "argon"])
+pretty_print_record()
+
+
+# ----------------------------------------------
+
+'{} {} {name}'.format(432, 44, name='Boris')
+
+
+def format_with_indent(format_string, *args, indent: int=None, indent_with: str=" ", **kwargs):
+    if indent is not None:
+        indent_str = indent_with * indent  # will multiply the indent string
+    else:
+        indent_str = ""
+
+    return indent_str + format_string.format(*args, **kwargs)
+
+...
+
+print(format_with_indent("Name: {}, Role: {role}", 'Boris', role='lecturer'))
+
+print(format_with_indent("Name: {}, Role: {role}", 'Boris', role='lecturer', indent=4))
+
+print(format_with_indent("Name: {}, Role: {role}", 'Boris', role='lecturer', indent=4, indent_with='-'))
+
+# -----------------------------------------------------------
+
+def convert_fahrenheit_to_celsius(deg_f: float) -&gt; float:
+    return (deg_f - 32) / 1.8
+
+print(convert_fahrenheit_to_celsius(234.45))
+
+
+def convert_fahrenheit_to_celsius(deg_f: float) -&gt; float:
+    return (deg_f - 32) / 1.8
+
+
+def convert_fahrenheit_to_celsius(deg_f: float) -&gt; float:
+    return (deg_f - 32) / 1.8
+
+x = 5
+x = 6
+
+
+convert_elephants_to_penguins = convert_fahrenheit_to_celsius
+
+print(convert_fahrenheit_to_celsius(54))
+print(convert_elephants_to_penguins(54))
+
+# ------------------------------------------------------
+
+def convert_fahrenheit_to_celsius(degrees_f):
+    degrees_c = (degrees_f - 32) / 1.8
+    return degrees_c
+
+print(convert_fahrenheit_to_celsius(32))
+print(degrees_c)  # грешка - променливата degrees_c е дефинирана във функцията, и тук не съществува
+print(degrees_f)  # грешка - degrees_f е параметър на функцията, и тук не съществува
+
+
+# -----------------------------------------------
+
+
+MAX_VALUE = 5
+
+
+def calculate(number):
+    if number &gt; MAX_VALUE:
+        return None
+    else:
+        return number ** 2
+
+print(calculate(4))
+
+
+
+# ---------------------------------
+
+number_of_calculations_performed = 0  # глобална променлива
+
+def calculate(parameter1, parameter2):
+    ...
+    global number_of_calculations_performed
+
+    # print(number_of_calculations_performed)
+    number_of_calculations_performed = number_of_calculations_performed + 1   # грешка
+
+calculate(4, 5)
+print(number_of_calculations_performed)
+
+
+# ------------------
+
+
+number_of_calculations_performed = 10  # глобална променлива
+
+def calculate(parameter1, parameter2):
+    ...
+
+    # print(number_of_calculations_performed)
+    number_of_calculations_performed = 23
+    print("In the function: ", number_of_calculations_performed, id(number_of_calculations_performed))
+
+
+print('Before: ', number_of_calculations_performed)
+calculate(4, 5)
+print('After: ', number_of_calculations_performed)
+
+# ----------------------------
+
+calculations_performed = []  # глобална променлива
+
+
+def calculate(parameter1, parameter2):
+    ...
+    # global calculations_performed
+    # print(number_of_calculations_performed)
+    calculations_performed.append(parameter1 * parameter2)
+    print("In the function: ", calculations_performed)
+
+print('Before: ', calculations_performed)
+calculate(4, 5)
+calculate(40, 2)
+calculate(50, 3)
+calculate(60, 4)
+print('After: ', calculations_performed)
+</code></pre>
+</hr></hr></hr></div>
+</body>
+</html>

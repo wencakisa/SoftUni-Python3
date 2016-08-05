@@ -1,0 +1,260 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1 class="title">
+6. Фокусите в Python
+</h1>
+<div class="content lecture-content fix-links" data-fix-links-template="/student/lecture/assignment/%40/?back=%2Fstudent%2Flecture%2F568015bf131b1642faa73799%2F">
+<p>В Python имаме на разположение приличен арсенал от "фокуси", които правят програмирането на езика по-лесно и приятно. Фокусите включват както "syntactic sugar" (улеснения в синтаксиса), така и полезни класове и функции в стандартната библиотека.</p>
+<p>За да демонстрираме всичко в тази лекция, ще използваме кода от <a href="/student/lecture/assignment/56a4ab616e8efb456bd29b06/">задачата в предишната лекция - Анализ на данни от верига магазини</a> .</p>
+<h2 id="-">ВАЖНО</h2>
+<blockquote>
+<ol>
+<li>Не прекалявайте с "фокусите"! Не ги използвайте, за да пишете "умен" код, а за да пишете <strong>кратък, но четим</strong> код.</li>
+</ol>
+<ol>
+<li>Описаните в тази лекция концепции и похвати <strong>не са задължителни, за да можете да работите с Python</strong>.</li>
+</ol>
+<ol>
+<li>Ако не се чуствате сигурни, или прецените, че не можете да разберете в детайли всичко, спокойно можете да пропуснете тази лекция.</li>
+</ol>
+<ol>
+<li>Целта на лекцията е да хвърлим бегъл поглед "под чаршафите" на Python, и да видим как работят някои от основните му концепции.</li>
+</ol>
+</blockquote>
+<h2 id="default-">default стойности</h2>
+<p>По-долу са дадени накратко похвати, които можете да използвате, без да е необходимо да разбирате как точно работят. В следващите секции нещата са описани в детайли.</p>
+<p>ако a_list е непразен списък, ще запази стойността си; ако е None, новата стойност ще бъде празен списък:</p>
+<pre><code>a_list = a_list or []
+</code></pre><p>Oбобщение на горното: присвояване на default стойности на променливи - работи за почти всички типове данни - str, int, float, dict, list, tuple, set, ....</p>
+<pre><code>a_value = a_value or DEFAULT_VALUE
+</code></pre><h2 id="comprehensions">Comprehensions</h2>
+<h3 id="list-comprehension">list comprehension</h3>
+<p>Създаване на списък от нещо, което можем да обиколим с for цикъл (т.нар. iterable):</p>
+<blockquote>
+<p><code>[value_expression for value in iterable]</code></p>
+<p><code>[n*2 for n in (1, 2, 3, 4, 5)]</code></p>
+</blockquote>
+<pre><code>[n for n in range(5)]
+[0, 1, 2, 3, 4]
+
+[n**2 for n in range(5)]    # n**2   - n на степен 2
+[0, 1, 4, 9, 16]
+
+with open('file.txt') as f:
+    lines_with_stripped_whitespaces = [l.strip() for l in f]
+</code></pre><p>Създаване на филтриран списък от нещо, което можем да обиколим с for цикъл (т.нар. iterable):</p>
+<pre><code>[n for n in range(10) if n % 2 == 0]
+[0, 2, 4, 6, 8]
+
+[n**2 for n in range(10) if n % 2 == 0]   # n**2   - n на степен 2
+[0, 4, 16, 36, 64]
+
+with open('file.txt') as f:
+    lines_with_stripped_whitespaces_non_empty = [l.strip() for l in f if l.strip()]
+</code></pre><h3 id="dict-comprehension">dict comprehension</h3>
+<p>Подобно на list comprehension, създаваме dict по нещо, което можем да обиколим с for цикъл (т.нар. iterable):</p>
+<blockquote>
+<p><code>{key_expression: value_expression for value in iterable}</code></p>
+<p><code>{n: n*2 for n in (1, 2, 3, 4, 5)}</code></p>
+<p>Важно: между "ключ" и стойност трябва да има <code>:</code>, както при дефиниране на dict</p>
+</blockquote>
+<pre><code>{n: n**2 for n in range(10)}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}   # ключ: числото , стойност: квадрат на числото
+
+with open('file.txt') as f:
+    lines_by_line_number = {line_number+1: l.strip() for line_number, l in enumerate(f)}
+</code></pre><h3 id="set-comprehension">set comprehension</h3>
+<p>Аналогично на другите 2 вида, set comprehension създава set.</p>
+<pre><code>{x % 5 for x in range(10, 50)}   # will result in a set -  {0, 1, 2, 3, 4}
+</code></pre><hr>
+<h2 id="-">Булеви оператори</h2>
+<p>Често се налага да сложим "default" стойност на променлива, ако тя към момента е празна</p>
+<pre><code>def print_list(list_to_print):
+    for e in list_to_print:
+        print(e)
+</code></pre><p>Ако обаче по някаква причина на тази функция подадем стойност None, ще се получи грешка.</p>
+<pre><code>list_of_sales = None
+
+...  # поради грешка сме пропуснали да инициализираме списъка
+
+print_list(list_of_sales)
+
+TypeError                                 Traceback (most recent call last)
+      1 def print_list(list_to_print):
+----&gt; 2         for e in list_to_print:
+      3                 print(e)
+      4 
+
+TypeError: 'NoneType' object is not iterable
+</code></pre><p><strong>Един от начините</strong>, по който можем да си осигурим, че параметърът няма да има стойност <code>None</code>, когато започнем да го обикаляме, е :</p>
+<pre><code>def print_list(list_to_print):
+    list_to_print = list_to_print or []      # &lt;&lt;&lt;&lt;&lt;
+    for e in list_to_print:
+        print(e)
+</code></pre><p>или малко по-краткото:</p>
+<pre><code>def print_list(list_to_print):
+    for e in list_to_print or []:     # &lt;&lt;&lt;&lt;&lt;
+        print(e)
+</code></pre><h4 id="-">Как работи това?</h4>
+<p>Примерът по-горе работи благодарение на следните концепции, описани детайлно по-долу:</p>
+<ol>
+<li>"truthy" &amp; "falsy" стойности</li>
+<li>minimal/short-circuit evaluation</li>
+<li>резултатът от булев израз е последно проверената/изпълнената стойност;</li>
+</ol>
+<h5 id="-truthy-falsy-">"truthy" &amp; "falsy" стойности</h5>
+<p>Python използва концепцията за "truthy" &amp; "falsy", подобно на много други скриптови езици. Ако променлива се използва в булев контекст - част от <code>if</code> или с boolean оператори, в зависимост от типа на стойността Python <strong>третира стойността като boolean</strong> - True или False, но без да я конвертира в boolean.</p>
+<p>Примери за <strong>Falsy</strong> стойности в зависимост от типа:</p>
+<ul>
+<li><strong>int</strong> - <code>0</code></li>
+<li><strong>float</strong>: <code>0.0</code> (но трябва да се внимава с това, заради грешки в точността на представяне на float числата, особено ако float стойността е резултат от изчисления)</li>
+<li><strong>str</strong> - <code>""</code> (празен стринг)</li>
+<li><strong>bytes</strong> - <code>b""</code> (празен bytes обект)</li>
+<li><strong>list</strong>, <strong>tuple</strong>, <strong>dict</strong>, <strong>set</strong> - празни</li>
+<li><code>None</code></li>
+<li><code>False</code></li>
+</ul>
+<p>Всички останали стойности за съотвения тип се третират като <strong>Truthy</strong>, например:</p>
+<ul>
+<li><strong>int</strong> - <code>1</code>, <code>-1</code>, <code>-5237922296986728930672677403958</code></li>
+<li><strong>float</strong>: <code>0.000000000001</code>, <code>320573.3245</code></li>
+<li><strong>str</strong> - <code>" "</code> (стринг, съдържащ интервал), <code>"any other string value"</code></li>
+<li><strong>bytes</strong> - <code>b" "</code> (bytes, съдържащ интервал),<code>b"\x32bytes\x62"</code></li>
+<li>непразни <strong>list</strong>, <strong>tuple</strong>, <strong>dict</strong>, <strong>set</strong> - <code>[" "]</code>, <code>[0]</code>, <code>[1,2,3,4, "a"]</code>, <code>{"key": "value"}</code>, <code>{2, 4, 6, 8}</code>, <code>("", "")</code></li>
+<li><code>True</code></li>
+<li>Обект</li>
+</ul>
+<p>Това ни дава възможност да проверяваме:</p>
+<pre><code>a_list = []
+
+...
+
+if a_list:
+    print("list is not empty")
+
+if not a_list:
+    print("the list is empty")
+</code></pre><h5 id="minimal-short-circuit-evaluation">minimal/short-circuit evaluation</h5>
+<p>Другата причина горните примери да работят е <a href="https://en.wikipedia.org/wiki/Short-circuit_evaluation"><strong>minimal evaluation</strong> / <strong>short-circuit evaluation</strong></a> - в един булев израз се изпълняват само нещата, които има смисъл да се изпълнят, за да се определи резултата от израза.</p>
+<p>За логическо "или/or" е достатъчно само едната стойност да е <code>True</code>, за да бъде крайният резултат <code>True</code>.</p>
+<pre><code>if check_condition_1() or check_condition_2():
+    ...
+</code></pre><p>Ако първата функция върне <code>True</code>, втората няма смисъл да се изпълнява, тъй като крайният резултат ще бъде <code>True</code>, независимо какво ще върне втората функция.</p>
+<p>От примерната функция по-горе имахме използване на булев оператор <code>or</code> така: <code>list_to_print = list_to_print or []</code>.</p>
+<ul>
+<li>ако <code>list_to_print</code> е не-празен списък, тогава той ще се определи като <strong>Truthy</strong> стойност, и това ще бъде резултатът от целия израз, който ще се присвои отново на променливата;</li>
+<li>ако <code>list_to_print</code> е празен списък или <code>None</code> ще бъде определен като <strong>Falsy</strong>, и интерпретаторът ще трябва да изпълни и втората стойност, която ще бъде и крайният резултат от изпълнението на израза.</li>
+</ul>
+<h2 id="unpacking">unpacking</h2>
+<p>Лесен и бърз начин да присвоим няколко стойности на няколко променливи едновременно е да използваме tuple unpacking.</p>
+<pre><code>x, y = 100, 200    # присвоява стойностите на от tuple (100, 200) на двете променливи x &amp; y 
+print(x)
+print(y)
+</code></pre><p>Имайте предвид, че ако броят на стойностите в tuple от двете страни не е един и същ, ще получите грешка:</p>
+<pre><code>x, y = 100, 200, 300    
+ValueError     Traceback (most recent call last)
+----&gt; 1 x, y = 100, 200, 300
+ValueError: too many values to unpack (expected 2)
+</code></pre><p>Ако желаем да присвоим първите няколко стойности на променливи, и всички останали да игнорираме, можем да използваме:</p>
+<pre><code>x, y, *other_values = 100, 200, 300, 400
+print(other_values)   #  other_values е list с всички стойности, които не са били присвоени
+</code></pre><p>Ако няма да използваме останалите стойности, конвенцията е да се използва <code>_</code> като име на променливата :</p>
+<pre><code>x, y, *_ = 100, 200, 300, 400
+</code></pre><h2 id="generators">generators</h2>
+<p>Генераторите са механизъм, при който функция може да връща резултати един по един, като "заспива" между отделните връщания на стойности.</p>
+<pre><code>def range_equivalent(start, end=None, step=None):
+    step = step if step is not None else 1
+    value = start
+    while end is None or value &lt; end:
+        yield value
+        value += step
+</code></pre><p>Използване на генератори:</p>
+<pre><code>for n in range_equivalent(2, 5):
+    print(n)
+
+2
+3
+4
+</code></pre><h4 id="-">Приложение на генераторите</h4>
+<p>Често генератори се използват, когато не е необходимо да създадете всички стойности наведнъж.</p>
+<p>Например, ако трябва да обработим данните от файл, е доста вероятно да не е добре да прочитаме целия файл в паметта, защото:</p>
+<ul>
+<li>файлът може да се окаже прекалено голям, и да не може да се помести в паметта;</li>
+<li>възможно е по средата на файла да преценим, че няма нужда да продължаваме - например ако сме намерили каквото търсим; в този случай сме прочели от диска само толкова данни, колкото сме обработили - не целия файл;</li>
+</ul>
+<blockquote>
+<p>Advanced:</p>
+<p>Всъщност <code>range_equivalent</code> не е генератор, а е <strong>generator function</strong>. Когато в тялото на функция има ключовата дума <code>yield</code>, при извикване на функцията Python създава обект generator, който се грижи да изпълнява и прекъсва изпълнението на тялото на функцията.</p>
+<p>Проблясък:</p>
+<p>Comprehensions, които разгледахме по-горе, са всъщност генератори.</p>
+</blockquote>
+<pre><code>DEMO
+</code></pre><p>Ако Ви е интересно как работят генераторите в детайли, можете да изгледате видеото от семинар на тема <a href="https://softuni.bg/trainings/1220/asynchronous-programming-with-python">Асинхронно програмиране с Python</a></p>
+<h2 id="-">Полезни вградени функции</h2>
+<ul>
+<li><code>min(iterable или *args)</code> и <code>max(iterable или *args)</code></li>
+<li><code>sum(iterable)</code></li>
+<li><code>all(iterable)</code> и <code>any(iterable)</code></li>
+<li><code>enumerate()</code></li>
+</ul>
+<h2 id="lambda-">lambda функции</h2>
+<p>lamda функциите са мини-функции, които се състоят само от един statement. Използват се често, когато Ви се налага да подадете проста логика като параметър на функции, които да я приложат върху множество от елементи.</p>
+<h3 id="-lambda-">Някои приложения на lambda функциите</h3>
+<h4 id="-">сортиране</h4>
+<pre><code>a_list = [ (4, 'b'), (2, 'a'), (1, 'c'), (3, 'f') ]
+
+a_list.sort()
+print(a_list)
+[(1, 'c'), (2, 'a'), (3, 'f'), (4, 'b')]
+
+a_list.sort(key=lambda item: item[1])
+print(a_list)
+[(2, 'a'), (4, 'b'), (1, 'c'), (3, 'f')]
+</code></pre><h4 id="map">map</h4>
+<p><code>map(function, *iterables)</code> прилага подадената функция върху всеки елемент от подадения iterable</p>
+<pre><code>DEMO
+</code></pre><h4 id="filter">filter</h4>
+<p>filter() прилага подадената фукция върху всекли елемент от подадения iterable, и връща генератор само тези елементи, за които фукцията е върнала truthy резултат.</p>
+<pre><code>DEMO
+</code></pre><h2 id="itertools">itertools</h2>
+<p>Itertools е модул от страндартната библиотека на Python, който предлага интересни функции, свързани с итериране на различни обекти.</p>
+<p>Пълна документация на модула можете да намерите тук: <a href="https://docs.python.org/3.5/library/itertools.html">https://docs.python.org/3.5/library/itertools.html</a></p>
+<p><code>cycle(iterable)</code></p>
+<p><code>groupby(iterable, keyfunc)</code></p>
+<p><code>permutations()</code> and <code>combinations()</code></p>
+<hr>
+<hr>
+<hr>
+<h2 id="ipython">iPython</h2>
+<p>Python има интерактивен shell - REPL . Когато стартирате Python без параметри, ще видите нещо подобно на това:</p>
+<pre><code>Python 3.4.2 (default, Dec 30 2014, 18:34:07) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.56)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt;
+</code></pre><p>всеки ред, който напишете, ще бъде изпълнен от интерпретатора на Python, резултатът ще бъде отпечатан. Това е много полезно, когато искате бързо и лесно да проверите как работи нещо.</p>
+<p>Проблемът е, че по обикновеният REPL на Python няма смислен help, няма autocompletion, history, което го прави неудобен.</p>
+<p>iPython е алтернативен REPL, който има гореспоменатите функционалности, както и много други, което го прави изключително удобен, ако искате лесно и бързо да проверите как и дали работи нещо.</p>
+<h3 id="-">инсталиране</h3>
+<pre><code>pip3 install ipython
+</code></pre><p>Ако сте <strong>под Windows</strong>, трябва да инсталирате и още един пакет:</p>
+<pre><code>pip3 install pyreadline
+</code></pre><p>Стартирате го с <code>ipython3</code> или само <code>ipython</code>, в зависимост от OS</p>
+<pre><code>Python 3.4.2 (default, Dec 30 2014, 18:34:07) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 4.0.0 -- An enhanced Interactive Python.
+?         -&gt; Introduction and overview of IPython's features.
+%quickref -&gt; Quick reference.
+help      -&gt; Python's own help system.
+object?   -&gt; Details about 'object', use 'object??' for extra details.
+
+In [1]:
+</code></pre><p>iPython има много силен и удобен code completion - напишете име на променлива, <code>.</code> и след това натиснете клавиш <code>TAB</code>.</p>
+<pre><code>DEMO
+</code></pre>
+</hr></hr></hr></hr></div>
+</body>
+</html>
