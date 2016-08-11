@@ -4,7 +4,7 @@ from datetime import datetime
 
 import requests
 
-APP_ID = '965acdac1ae64cf06761bb563ad34d96'
+APP_ID = 'YOURAPPIDHERE'
 API_URL = 'http://api.openweathermap.org/data/2.5/weather'
 STATUS_CODE_OK = 200
 
