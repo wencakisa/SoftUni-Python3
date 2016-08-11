@@ -2,41 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e832c8c-5784-4c92-bf7f-0d9c2ec8d57e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_08/import_data_into_db.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_01/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_01/solution.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_02/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_02/solution.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_02/steps.txt" afterPath="$PROJECT_DIR$/exam_prep_3/task_02/steps.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_03/containers.txt" afterPath="$PROJECT_DIR$/exam_prep_3/task_03/containers.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_03/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_03/solution.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_04/city-temperature-data.csv" afterPath="$PROJECT_DIR$/exam_prep_3/task_04/city-temperature-data.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_04/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_04/solution.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_05/sales.csv" afterPath="$PROJECT_DIR$/exam_prep_3/task_05/sales.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_05/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_05/solution.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" afterPath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_01/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_01/solution.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_02/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_02/solution.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_03/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_03/solution.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_04/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_04/solution.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_05/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_05/solution.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/analyze.py" afterPath="$PROJECT_DIR$/lecture_05/analyze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/analyzers.py" afterPath="$PROJECT_DIR$/lecture_05/analyzers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/sales.py" afterPath="$PROJECT_DIR$/lecture_05/sales.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/draw.py" afterPath="$PROJECT_DIR$/lecture_07/draw.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/figures/base.py" afterPath="$PROJECT_DIR$/lecture_07/figures/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/figures/simple.py" afterPath="$PROJECT_DIR$/lecture_07/figures/simple.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/loaders.py" afterPath="$PROJECT_DIR$/lecture_07/loaders.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_10.html" afterPath="$PROJECT_DIR$/takovata/lecture_10.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_11.html" afterPath="$PROJECT_DIR$/takovata/lecture_11.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_5.html" afterPath="$PROJECT_DIR$/takovata/lecture_5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_6.html" afterPath="$PROJECT_DIR$/takovata/lecture_6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_7.html" afterPath="$PROJECT_DIR$/takovata/lecture_7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_8.html" afterPath="$PROJECT_DIR$/takovata/lecture_8.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_9.html" afterPath="$PROJECT_DIR$/takovata/lecture_9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_09/forecast.py" afterPath="$PROJECT_DIR$/lecture_09/forecast.py" />
     </list>
     <ignored path="Softuni-Python3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +28,30 @@
       <file leaf-file-name="forecast.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lecture_09/forecast.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state relative-caret-position="74">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="currency_convertor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecture_09/currency_convertor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enhanced_currency_convertor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecture_09/enhanced_currency_convertor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -197,7 +188,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exam_prep_1" />
+              <option name="myItemId" value="lecture_09" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,9 +452,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="27" width="960" height="1053" extended-state="4" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38609627" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -842,26 +833,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_09/enhanced_currency_convertor.py">
+    <entry file="file://$PROJECT_DIR$/lecture_09/currency_convertor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="2">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_09/currency_convertor.py">
+    <entry file="file://$PROJECT_DIR$/lecture_09/enhanced_currency_convertor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lecture_09/forecast.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        <state relative-caret-position="74">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
