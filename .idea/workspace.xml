@@ -2,34 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e832c8c-5784-4c92-bf7f-0d9c2ec8d57e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exam_prep_2/task_04/city-temperature-data.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_07/figures/polygon.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_07/input_files/figures_simple.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_07/input_files/input_figures.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_07/input_files/input_figures.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_11.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/lecture_9.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/takovata/takovata.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lecture_05/analyze_functions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lecture_05/print_functions.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lecture_08/import_data_into_db.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_01/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_01/solution.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_02/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_02/solution.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_02/steps.txt" afterPath="$PROJECT_DIR$/exam_prep_3/task_02/steps.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_03/containers.txt" afterPath="$PROJECT_DIR$/exam_prep_3/task_03/containers.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_03/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_03/solution.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_04/city-temperature-data.csv" afterPath="$PROJECT_DIR$/exam_prep_3/task_04/city-temperature-data.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_04/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_04/solution.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_05/sales.csv" afterPath="$PROJECT_DIR$/exam_prep_3/task_05/sales.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/exam_prep_2/task_05/solution.py" afterPath="$PROJECT_DIR$/exam_prep_3/task_05/solution.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py" afterPath="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/wencakisa.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/wencakisa.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" afterPath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_02/matchmaking.py" afterPath="$PROJECT_DIR$/lecture_02/matchmaking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_01/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_01/solution.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_02/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_02/solution.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_03/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_03/solution.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_04/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_04/solution.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exam_prep_1/task_05/solution.py" afterPath="$PROJECT_DIR$/exam_prep_1/task_05/solution.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/analyze.py" afterPath="$PROJECT_DIR$/lecture_05/analyze.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/catalog.py" afterPath="$PROJECT_DIR$/lecture_05/catalog.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/analyzers.py" afterPath="$PROJECT_DIR$/lecture_05/analyzers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_05/sales.py" afterPath="$PROJECT_DIR$/lecture_05/sales.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/draw.py" afterPath="$PROJECT_DIR$/lecture_07/draw.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/figures/base.py" afterPath="$PROJECT_DIR$/lecture_07/figures/base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/figures/simple.py" afterPath="$PROJECT_DIR$/lecture_07/figures/simple.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lecture_07/loaders.py" afterPath="$PROJECT_DIR$/lecture_07/loaders.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_10.html" afterPath="$PROJECT_DIR$/takovata/lecture_10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_11.html" afterPath="$PROJECT_DIR$/takovata/lecture_11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_5.html" afterPath="$PROJECT_DIR$/takovata/lecture_5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_6.html" afterPath="$PROJECT_DIR$/takovata/lecture_6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_7.html" afterPath="$PROJECT_DIR$/takovata/lecture_7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_8.html" afterPath="$PROJECT_DIR$/takovata/lecture_8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/takovata/lecture_9.html" afterPath="$PROJECT_DIR$/takovata/lecture_9.html" />
     </list>
     <ignored path="Softuni-Python3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +55,20 @@
     <favorites_list name="Softuni-Python3" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="forecast.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lecture_09/forecast.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,57 +83,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Python-Dev-old/practice/sales.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_01.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_02.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_03.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_04.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_01/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_02/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_03/packages.txt" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_03/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_04/exchange.txt" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_04/amounts.txt" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_04/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_05/sales.csv" />
-        <option value="$PROJECT_DIR$/exam_prep_1/solution_05/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_1/task_06/distances.txt" />
-        <option value="$PROJECT_DIR$/exam_prep_1/task_06/solution.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/practice/analyze_functions.py" />
-        <option value="$PROJECT_DIR$/takovata/takovata.html" />
-        <option value="$PROJECT_DIR$/lecture_02/matchmaking.py" />
-        <option value="$PROJECT_DIR$/takovata/lecture_1.html" />
-        <option value="$PROJECT_DIR$/lecture_05/resources/catalog.csv" />
         <option value="$PROJECT_DIR$/lecture_05/resources/sales-10K.csv" />
         <option value="$PROJECT_DIR$/lecture_05/print_functions.py" />
         <option value="$PROJECT_DIR$/lecture_05/analyze_functions.py" />
         <option value="$PROJECT_DIR$/takovata_lectures/takovata.py" />
         <option value="$PROJECT_DIR$/takovata/takovata.py" />
-        <option value="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
-        <option value="$PROJECT_DIR$/exam_prep_2/task_01/solution.py" />
         <option value="$PROJECT_DIR$/exam_prep_2/task_02/steps.txt" />
         <option value="$PROJECT_DIR$/exam_prep_2/task_03/containers.txt" />
         <option value="$PROJECT_DIR$/exam_prep_2/task_04/city‐temperature‐data.csv" />
         <option value="$PROJECT_DIR$/exam_prep_2/task_04/city-temperature-data.csv" />
-        <option value="$PROJECT_DIR$/exam_prep_2/task_04/solution.py" />
         <option value="$PROJECT_DIR$/exam_prep_2/task_05/sales.csv" />
-        <option value="$PROJECT_DIR$/exam_prep_2/task_03/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_2/task_05/solution.py" />
-        <option value="$PROJECT_DIR$/exam_prep_2/task_02/solution.py" />
-        <option value="$PROJECT_DIR$/lecture_05/sales.py" />
-        <option value="$PROJECT_DIR$/lecture_05/analyze.py" />
         <option value="$PROJECT_DIR$/lecture_07/figures.json" />
         <option value="$PROJECT_DIR$/lecture_07/figures.py" />
-        <option value="$PROJECT_DIR$/lecture_07/figures/simple.py" />
         <option value="$PROJECT_DIR$/lecture_07/figures/polygon.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py" />
         <option value="$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py" />
-        <option value="$PROJECT_DIR$/lecture_07/figures/base.py" />
         <option value="$PROJECT_DIR$/lecture_07/input_files/figures_simple.json" />
-        <option value="$PROJECT_DIR$/lecture_05/analyzers.py" />
         <option value="$PROJECT_DIR$/lecture_05/catalog.py" />
-        <option value="$PROJECT_DIR$/lecture_07/loaders.py" />
+        <option value="$PROJECT_DIR$/mkdirs.py" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_01/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_02/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_03/words.txt" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_03/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_04/fridge-temp.csv" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_05/takovata-access.log" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_05/solution.py" />
+        <option value="$PROJECT_DIR$/lecture_05/sales.py" />
+        <option value="$PROJECT_DIR$/lecture_05/analyzers.py" />
+        <option value="$PROJECT_DIR$/lecture_07/figures/simple.py" />
+        <option value="$PROJECT_DIR$/lecture_05/analyze.py" />
+        <option value="$PROJECT_DIR$/exam_prep_2/task_04/solution.py" />
+        <option value="$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py" />
+        <option value="$PROJECT_DIR$/lecture_07/figures/base.py" />
         <option value="$PROJECT_DIR$/lecture_07/draw.py" />
+        <option value="$PROJECT_DIR$/lecture_07/loaders.py" />
+        <option value="$PROJECT_DIR$/exam_prep_3/task_01/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_3/task_02/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_1/task_01/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_1/task_02/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_1/task_03/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_1/task_04/solution.py" />
+        <option value="$PROJECT_DIR$/exam_prep_1/task_05/solution.py" />
+        <option value="$PROJECT_DIR$/lecture_08/analyzers.py" />
+        <option value="$PROJECT_DIR$/lecture_08/catalog.py" />
+        <option value="$PROJECT_DIR$/lecture_08/demo_sqlite.py" />
+        <option value="$PROJECT_DIR$/lecture_08/sales.py" />
+        <option value="$PROJECT_DIR$/lecture_08/db_utils.py" />
+        <option value="$PROJECT_DIR$/lecture_08/analyze.py" />
+        <option value="$PROJECT_DIR$/lecture_08/filter_sales_by_city.py" />
+        <option value="$PROJECT_DIR$/lecture_09/currency_convertor.py" />
+        <option value="$PROJECT_DIR$/lecture_09/enhanced_currency_convertor.py" />
+        <option value="$PROJECT_DIR$/lecture_09/forecast.py" />
       </list>
     </option>
   </component>
@@ -148,7 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,45 +197,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lecture_07" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Softuni-Python3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Softuni-Python3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lecture_07" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="figures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Softuni-Python3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Softuni-Python3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lecture_05" />
+              <option name="myItemId" value="exam_prep_1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,67 +212,85 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python-Dev-old" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lecture_08" />
+      <recent name="$PROJECT_DIR$/lecture_07" />
+      <recent name="$PROJECT_DIR$/../Programming-Basics/exam_24_04_2016_v2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lecture_08/resources" />
       <recent name="$PROJECT_DIR$/lecture_07/input_files" />
       <recent name="$PROJECT_DIR$/lecture_07/figures" />
       <recent name="$PROJECT_DIR$/exam_prep_1/solution_04" />
       <recent name="$PROJECT_DIR$/exam_prep_1/solution_03" />
-      <recent name="$PROJECT_DIR$/exam_prep_1/solution_02" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lecture_07" />
-      <recent name="$PROJECT_DIR$/../Programming-Basics/exam_24_04_2016_v2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.analyze">
-    <configuration default="false" name="analyze" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.forecast">
+    <configuration default="false" name="filter_sales_by_city" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_05" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_08" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Softuni-Python3" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_05/analyze.py" />
-      <option name="PARAMETERS" value="./resources/catalog.csv ./resources/sales-10K.csv" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_08/filter_sales_by_city.py" />
+      <option name="PARAMETERS" value="./resources/sales.db" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="figures" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="currency_convertor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Softuni-Python3" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_07/figures/polygon.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_09/currency_convertor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="draw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="enhanced_currency_convertor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_07" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_09" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Softuni-Python3" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_07/draw.py" />
-      <option name="PARAMETERS" value="./input_files/figures_simple.json" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_09/enhanced_currency_convertor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="forecast" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lecture_09" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Softuni-Python3" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lecture_09/forecast.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -422,16 +428,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.analyze" />
-      <item index="1" class="java.lang.String" itemvalue="Python.figures" />
-      <item index="2" class="java.lang.String" itemvalue="Python.draw" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.filter_sales_by_city" />
+      <item index="1" class="java.lang.String" itemvalue="Python.currency_convertor" />
+      <item index="2" class="java.lang.String" itemvalue="Python.enhanced_currency_convertor" />
+      <item index="3" class="java.lang.String" itemvalue="Python.forecast" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.analyze" />
-        <item index="1" class="java.lang.String" itemvalue="Python.draw" />
-        <item index="2" class="java.lang.String" itemvalue="Python.figures" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.forecast" />
+        <item index="1" class="java.lang.String" itemvalue="Python.enhanced_currency_convertor" />
+        <item index="2" class="java.lang.String" itemvalue="Python.currency_convertor" />
+        <item index="3" class="java.lang.String" itemvalue="Python.filter_sales_by_city" />
       </list>
     </recent_temporary>
   </component>
@@ -455,14 +463,14 @@
     <frame x="960" y="27" width="960" height="1053" extended-state="4" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29791668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38609627" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39144385" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39037433" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989305" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -473,6 +481,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38609627" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3882353" sideWeight="0.49375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989305" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -490,245 +517,141 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="50" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lecture_02/matchmaking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_02/initials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3459">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/resources/sales-10K.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="3240" column="47" selection-start-line="3240" selection-start-column="47" selection-end-line="3240" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/resources/catalog.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3582">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/print_functions.py" />
-    <entry file="file://$PROJECT_DIR$/lecture_05/analyze_functions.py" />
-    <entry file="file://$PROJECT_DIR$/takovata/takovata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib64/python3.5/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="968" column="36" selection-start-line="968" selection-start-column="36" selection-end-line="968" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_02/people.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/takovata/lecture_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/101/paper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exam_prep_2/task_01/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_02/steps.txt">
+    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_03/words.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_03/containers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/exam/208/missing_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_04/city-temperature-data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_04/solution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_03/solution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exam_prep_2/task_02/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="144">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_04/fridge-temp.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_05/takovata-access.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_05/sales.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_05/catalog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_05/analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_3/task_05/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exam_prep_2/task_05/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="831">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_05/sales.csv">
+    <entry file="file://$PROJECT_DIR$/exam_prep_3/task_04/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="324">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_01/chess.py">
+    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_03/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/__init__.py">
+    <entry file="file://$PROJECT_DIR$/exam_prep_2/task_04/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/instagram_downloader/insta_downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_07/figures/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_07/figures/simple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_07/figures/polygon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_07/loaders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_07/input_files/input_figures.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib64/python3.5/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="2307" column="0" selection-start-line="2307" selection-start-column="0" selection-end-line="2307" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,161 +659,212 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/figures/__init__.py">
+    <entry file="file://$PROJECT_DIR$/lecture_07/input_files/figures_simple.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mkdirs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_3/task_01/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_07/draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_3/task_02/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_01/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_02/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_03/packages.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_03/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_04/exchange.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/figures/base.py">
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_04/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="14" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/figures/polygon.py">
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_05/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/figures/simple.py">
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_06/solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="288">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/input_files.yaml">
+    <entry file="file://$PROJECT_DIR$/exam_prep_1/task_05/sales.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/loaders.py">
+    <entry file="file://$PROJECT_DIR$/lecture_08/demo.db" />
+    <entry file="file://$PROJECT_DIR$/lecture_08/resources/catalog.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_08/analyzers.py" />
+    <entry file="file://$PROJECT_DIR$/lecture_08/resources/output.db" />
+    <entry file="file://$PROJECT_DIR$/lecture_08/resources/sales-database.db" />
+    <entry file="file://$PROJECT_DIR$/lecture_08/resources/sales.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_08/demo_sqlite.py" />
+    <entry file="file://$PROJECT_DIR$/lecture_05/analyzers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_08/db_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="e#0#34#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/oop_tasks/draw.py">
+    <entry file="file://$PROJECT_DIR$/lecture_08/catalog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_08/sales.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_08/import_data_into_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/input_files/figures_simple.json">
+    <entry file="file://$PROJECT_DIR$/lecture_08/filter_sales_by_city.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/sales.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="309">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/catalog.py">
+    <entry file="file://$PROJECT_DIR$/../Python-Dev-old/url_requests/forecast.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1470400802780" expanded="true" signature="386:631" ph="..." />
-            <marker date="1470400802780" expanded="true" signature="452:631" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/analyzers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_05/analyze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/draw.py">
+    <entry file="file://$PROJECT_DIR$/lecture_09/enhanced_currency_convertor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_09/currency_convertor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture_09/forecast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/loaders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="32" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/figures/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/figures/simple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture_07/figures/polygon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

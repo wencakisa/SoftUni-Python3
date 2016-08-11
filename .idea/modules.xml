@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Dive-Into-Python3/.idea/Dive-Into-Python3.iml" filepath="$PROJECT_DIR$/../Dive-Into-Python3/.idea/Dive-Into-Python3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Programming-Basics/.idea/Programming-Basics.iml" filepath="$PROJECT_DIR$/../Programming-Basics/.idea/Programming-Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Python-Dev-old/.idea/Python-Dev-old.iml" filepath="$PROJECT_DIR$/../Python-Dev-old/.idea/Python-Dev-old.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Softuni-Python3.iml" filepath="$PROJECT_DIR$/.idea/Softuni-Python3.iml" />
     </modules>
