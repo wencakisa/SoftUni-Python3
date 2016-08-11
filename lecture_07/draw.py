@@ -3,6 +3,9 @@ import os
 from typing import List
 from turtle import Turtle, done as turtle_done
 
+from json.decoder import JSONDecodeError
+from yaml import YAMLError
+
 from lecture_07.loaders import Loader, JSONLoader, YAMLoader
 from lecture_07.figures.base import Figure
 from lecture_07.figures.simple import Circle, Rectangle, Square
@@ -23,13 +26,23 @@ FIGURE_TYPES = {
 
 
 def main():
-    if len(sys.argv) < 2:
-        print('Usage: {} <figures_filename>'.format(sys.argv[0]))
-        return 1
+    try:
+        if len(sys.argv) < 2:
+            print('Usage: {} <figures_filename>'.format(sys.argv[0]))
+            return 2
 
-    loader = get_loader(figures_filename=sys.argv[1])
-    figures = load_figures(loader)
-    draw_figures(figures)
+        loader = get_loader(figures_filename=sys.argv[1])
+        figures = load_figures(loader)
+        draw_figures(figures)
+    except JSONDecodeError as jde:
+        print('Failed to parse JSON: {}'.format(str(jde)))
+        return 1
+    except YAMLError as ye:
+        print('Failed to parse YAML: {}'.format(str(ye)))
+        return 1
+    except Exception as e:
+        print('Error: {}'.format(e))
+        return 1
 
     return 0
 

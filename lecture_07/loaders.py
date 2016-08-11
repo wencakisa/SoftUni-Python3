@@ -1,10 +1,7 @@
 import os
-import sys
 
-from json import load as load_json
-from json.decoder import JSONDecodeError
-
-from yaml import load as load_yaml, YAMLError
+import json
+import yaml
 
 
 class Loader:
@@ -21,18 +18,12 @@ class Loader:
 class JSONLoader(Loader):
     def load_data(self):
         with open(self.filename) as f:
-            try:
-                return load_json(f)
-            except JSONDecodeError as jde:
-                print('Failed to parse JSON: {}'.format(str(jde)))
-                sys.exit(2)
+            for line in json.load(f):
+                yield line
 
 
 class YAMLoader(Loader):
     def load_data(self):
         with open(self.filename) as f:
-            try:
-                return load_yaml(f)
-            except YAMLError as ye:
-                print('Failed to parse YAML: {}'.format(str(ye)))
-                sys.exit(2)
+            for line in yaml.load(f):
+                yield line

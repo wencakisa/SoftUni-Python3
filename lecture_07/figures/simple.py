@@ -8,11 +8,11 @@ class Circle(Figure):
         self.radius = radius
         self.steps = None
 
-    def draw(self, turtle_instance: Turtle):
-        super().draw(turtle_instance)
+    def draw(self, t: Turtle):
+        super().draw(t)
 
-        self.jump_to(turtle_instance, x=self.center_x, y=self.center_y - self.radius)
-        turtle_instance.circle(radius=self.radius, steps=self.steps)
+        self.jump_to(t, x=self.center_x, y=self.center_y - self.radius)
+        t.circle(radius=self.radius, steps=self.steps)
 
 
 class Rectangle(Figure):
@@ -22,16 +22,16 @@ class Rectangle(Figure):
         self.width = width
         self.height = height
 
-    def draw(self, turtle_instance: Turtle):
-        super().draw(turtle_instance)
+    def draw(self, t: Turtle):
+        super().draw(t)
 
-        self.jump_to(turtle_instance, self.center_x - self.width / 2, self.center_y + self.height / 2)
+        self.jump_to(t, self.center_x - self.width / 2, self.center_y + self.height / 2)
 
         for _ in range(2):
-            turtle_instance.forward(self.width)
-            turtle_instance.right(90)
-            turtle_instance.forward(self.height)
-            turtle_instance.right(90)
+            t.forward(self.width)
+            t.right(90)
+            t.forward(self.height)
+            t.right(90)
 
 
 class Square(Rectangle):
