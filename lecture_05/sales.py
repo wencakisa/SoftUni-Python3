@@ -7,7 +7,7 @@ import iso8601
 EXPECTED_COLUMNS = 5
 
 
-class Item:
+class Sale:
     def __init__(self, item_id, country, city, timestamp, price):
         self.item_id = str(item_id)
         self.country = str(country)
@@ -36,7 +36,7 @@ def load_sales_data(sales_filename: str):
     with open(sales_filename, mode='r', encoding='utf-8') as f:
         for row in csv.reader(f):
             if len(row) == EXPECTED_COLUMNS:
-                yield Item(
+                yield Sale(
                     item_id=row[0],
                     country=row[1],
                     city=row[2],

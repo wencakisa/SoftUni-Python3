@@ -2,7 +2,7 @@ from collections import Counter
 from typing import Dict
 
 from lecture_05.catalog import CatalogEntry
-from lecture_05.sales import Item
+from lecture_05.sales import Sale
 
 
 def get_title_lines(title: str) -> str:
@@ -10,7 +10,7 @@ def get_title_lines(title: str) -> str:
 
 
 class BaseAnalyzer:
-    def analyze_sale(self, sale_item: Item) -> None:
+    def analyze_sale(self, sale: Sale) -> None:
         raise NotImplementedError()
 
     def print_results(self) -> None:
@@ -28,10 +28,10 @@ class TotalsAnalyzer(BaseAnalyzer):
         self.min_timestamp = None
         self.max_timestamp = None
 
-    def analyze_sale(self, sale_item: Item):
+    def analyze_sale(self, sale: Sale):
         self.total_count += 1
-        self.total_amount += sale_item.price
-        ts = sale_item.timestamp
+        self.total_amount += sale.price
+        ts = sale.timestamp
 
         if self.min_timestamp is None or ts < self.min_timestamp:
             self.min_timestamp = ts
@@ -65,10 +65,10 @@ class AmountsGroupedAnalyzer(BaseAnalyzer):
         self.amounts_grouped = Counter()
         self.catalog = catalog
 
-    def analyze_sale(self, sale_item: Item):
-        group_by_value = self.get_group_by_value(sale_item)
+    def analyze_sale(self, sale: Sale):
+        group_by_value = self.get_group_by_value(sale)
 
-        self.amounts_grouped[group_by_value] += sale_item.price
+        self.amounts_grouped[group_by_value] += sale.price
 
     def print_results(self):
         top_amounts_grouped = self.amounts_grouped.most_common(5)
@@ -80,26 +80,26 @@ class AmountsGroupedAnalyzer(BaseAnalyzer):
             print('\t{:<{}} : {:.2f} €'.format(category_name, max_padding, price))
         print('')
 
-    def get_group_by_value(self, sale_item: Item) -> str:
+    def get_group_by_value(self, sale: Sale) -> str:
         raise NotImplementedError()
 
 
 class AmountsByCategoryAnalyzer(AmountsGroupedAnalyzer):
     criteria_title = 'Сума на продажби по категории'
 
-    def get_group_by_value(self, sale_item: Item) -> str:
-        return self.catalog.get(sale_item.item_id, None).category_name
+    def get_group_by_value(self, sale: Sale) -> str:
+        return self.catalog.get(sale.item_id, None).category_name
 
 
 class AmountsByCityAnalyzer(AmountsGroupedAnalyzer):
     criteria_title = 'Сума на продажби по градове'
 
-    def get_group_by_value(self, sale_item: Item) -> str:
-        return '{} ({})'.format(sale_item.city, sale_item.country)
+    def get_group_by_value(self, sale: Sale) -> str:
+        return '{} ({})'.format(sale.city, sale.country)
 
 
 class AmountsByHourAnalyzer(AmountsGroupedAnalyzer):
     criteria_title = 'Часове с най-голяма сума продажби'
 
-    def get_group_by_value(self, sale_item: Item) -> str:
-        return sale_item.timestamp.replace(minute=0, second=0).strftime('%Y-%m-%d %H:%M')
+    def get_group_by_value(self, sale: Sale) -> str:
+        return sale.timestamp.replace(minute=0, second=0).strftime('%Y-%m-%d %H:%M')

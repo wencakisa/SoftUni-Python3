@@ -22,9 +22,9 @@ def main():
             AmountsByHourAnalyzer(catalog)
         ]
 
-        for sale_item in sales_data_generator:
+        for sale in sales_data_generator:
             for analyzer in analyzers:
-                analyzer.analyze_sale(sale_item)
+                analyzer.analyze_sale(sale)
 
         for analyzer in analyzers:
             analyzer.print_results()
@@ -37,7 +37,8 @@ def main():
 
 def parse_cmd_line_params() -> tuple:
     if len(sys.argv) < 3:
-        raise ValueError('Usage: analyze.py <catalog.csv> <sales.csv>')
+        print('Usage: {} <catalog.csv> <sales.csv>'.format(sys.argv[0]))
+        sys.exit(2)
 
     catalog_filename, sales_filename = sys.argv[1:3]
 
