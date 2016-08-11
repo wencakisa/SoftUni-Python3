@@ -22,7 +22,7 @@ def main():
     resp_json = resp.json()
 
     if resp_json['cod'] != STATUS_CODE_OK:
-        print('Няма метеорологична информация за град {}'.format(city))
+        print(resp_json['message'])
         return 2
 
     main_info = resp_json['main']
