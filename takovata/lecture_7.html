@@ -4,10 +4,84 @@
 </head>
 <body>
 <h1 class="title">
-5. Голяма задача
+9. Работа с бази данни
 </h1>
-<div class="content lecture-content fix-links" data-fix-links-template="/student/lecture/assignment/%40/?back=%2Fstudent%2Flecture%2F56801633131b1642fba7379c%2F">
-<h3 id="-3-56a4ab616e8efb456bd29b06-"><a href="@56a4ab616e8efb456bd29b06">Задача: 3. Анализ на данни от верига магазини</a></h3>
+<div class="content lecture-content fix-links" data-fix-links-template="/student/lecture/assignment/%40/?back=%2Fstudent%2Flecture%2F568015ed131b1642fba7379b%2F">
+<h2 id="-">Релационни бази данни</h2>
+<blockquote>
+<p>ВАЖНО: Лекцията ще Ви даде само бегла представа за работа с релационни бази данни и SQL - създаване на таблица, вкарване, извличане, актуализиране и изтриване на данни.</p>
+</blockquote>
+<p>За примерите в лекцията ще използване данните от предишната лекция:</p>
+<ul>
+<li><a href="/media/lectures-data/05/catalog.csv">Каталог</a></li>
+<li><a href="/media/lectures-data/05/sales-10K.csv">10'000 продажби</a></li>
+<li><a href="/media/lectures-data/05/sales-100K.csv">100'000 продажби</a></li>
+<li><a href="/media/lectures-data/05/sales-1M.csv">1'000'000 продажби</a></li>
+</ul>
+<h3 id="sqlite">SQLite</h3>
+<p><a href="https://www.sqlite.org/">SQLite</a> е малка и удобна библиотека за бази данни, която съхранява цялата база данни в един файл. Използва се на много места (например в браузърите Mozilla Firefox и Google Chrome, Android, iOS и т.н.). За работа с SQLite не е необходимо да стартирате сървър или да правите каквото и да било - просто се "свързвате" към базата данни.</p>
+<p>Python има вградена поддръжка на SQLite, без да е необходимо да правите нищо допълнително (даже и под Windows :o) ). За целите на лекцията и задачите ще използваме SQLite.</p>
+<p>Можете да използвате SQLite директно от Вашия терминал:</p>
+<pre><code>$ sqlite3 example.db
+SQLite version 3.8.6 2014-08-15 11:46:33
+Enter ".help" for usage hints.
+sqlite&gt;
+</code></pre><p>И понеже някои от Вас не обичат Големия Страшен Черен Терминал (ГСЧТ), можете да използвате някоя програма с графичен интерфейс, за да прегледате съдържанието на SQLite база данни, например:</p>
+<ul>
+<li><a href="http://sqlitestudio.pl/?act=download">SQLite Studio</a> - работи под Windows, Mac, Linux</li>
+<li><a href="https://itunes.apple.com/us/app/sqlite-free-datum/id901631046?mt=12">SQLite Free</a> - работи само под MacOS</li>
+<li><a href="http://sqliteadmin.orbmu2k.de/">SQLite Administrator</a> - работи само под Windows</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/">SQLite Manager</a> - addon за Mozilla Firefox, мултиплатформен</li>
+<li>и мнооооого мноого други :о)</li>
+</ul>
+<p>За първоначалната проба ще използваме предварително подготвена база с данни от задачата с продажбите от предишната лекция.</p>
+<pre><code>DEMO
+</code></pre><h3 id="-">Други бази данни</h3>
+<p>С другите бази данни се работи по подобен начин, както ще разгледаме в тази лекция SQLite.</p>
+<p>За да можете да се свържете с Вашата база данни, ще трябва да инсталирате необходимия Ви драйвер с <code>pip install ...</code></p>
+<ul>
+<li>MySQL - <a href="https://pypi.python.org/pypi/MySQL-python">MySQL-python</a></li>
+<li>PostgreSQL - <a href="http://initd.org/psycopg/docs/install.html#use-a-python-package-manager">psycopg2</a></li>
+<li>Oracle - <a href="http://cx-oracle.sourceforge.net/">cx_Oracle</a></li>
+<li>MS SQL Server - <a href="http://pymssql.org/en/latest/intro.html#install">pymssql</a></li>
+</ul>
+<p>Имайте предвид, че при различните бази данни SQL се различава малко - дали като типове колони, които се поддържат, дали като специфики при някои операции. Прочетете в документацията дали Вашата база данни не работи с нестандартни функционалности на SQL езика</p>
+<h2 id="sql">SQL</h2>
+<p><a href="https://en.wikipedia.org/wiki/SQL">SQL</a> е стандартният език за работа с релационни бази данни. Създаден през 1974, и до днес SQL се използва и развива.</p>
+<p>Всяка популярна релационна база данни поддържа SQL до една или друга степен. Доста често базите данни добавят собствени разширения към езика SQL, които да отразят техните специфики.</p>
+<h2 id="-">Основни концепции</h2>
+<h3 id="-">Таблица</h3>
+<p>Таблицата е основният елемент в релационните бази данни.</p>
+<p>В релационните бази данни структурата на таблиците е фиксирана - колони с точно определен тип данни.</p>
+<p>Във всяка таблица имаме редове (записи), като всеки ред съдържа стойности за колоните на таблицата.</p>
+<h3 id="primary-key-pk-">Primary key / PK / Първичен ключ</h3>
+<p>Уникално идентифицира записа в таблицата. Най-добре е да е int / integer.</p>
+<p>Обикновено е autoincrement / serial - при вмъкване на данни в таблицата, базата данни автоматично попълва последователен int.</p>
+<h3 id="-foreign-key-fk-">Релации и Foreign key / FK / Ключ към друга таблица</h3>
+<p>Най-голямата сила на релационните бази данни е моделирането на данните като релации между таблиците.</p>
+<p><code>TODO</code></p>
+<h2 id="-">Параметри</h2>
+<blockquote>
+<p>!!! ВАЖНО !!! Никога не изпълнявайте SQL заявки като конкатенирате / форматирате директно стойностите в SQL стринга. Това е една от най-често срещаните грешки в модерните софтуерни системи, и се нарича <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL injection</a>. <strong>Винаги подавайте параметрите на SQL заявката отделно.</strong></p>
+</blockquote>
+<p><code>TODO</code></p>
+<h2 id="sql-select">SQL: Select</h2>
+<pre><code>select * from catalog;
+
+select * from catalog where category = 'SHOES';
+</code></pre><h2 id="sql-">SQL: Създаване на таблица</h2>
+<pre><code>create table if not exists catalog (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        item_key varchar(200),
+        category varchar(200)
+    );
+</code></pre><h2 id="sql-insert">SQL: Insert</h2>
+<pre><code>insert into catalog (item_key, category) values ('999999', 'Some category');
+</code></pre><h2 id="sql-update">SQL: Update</h2>
+<pre><code>update sale set city = 'Frankfurt' where city = 'Frankfurt am Main';
+</code></pre><h2 id="sql-delete">SQL: Delete</h2>
+<pre><code>delete from sale where city = 'London';
+</code></pre>
 </div>
 </body>
 </html>
