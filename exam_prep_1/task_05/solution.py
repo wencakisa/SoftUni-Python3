@@ -1,30 +1,35 @@
+import sys
+import csv
+
+
 def main():
     try:
-        input_item_id = str(input())
-        sales_filename = str(input())
+        input_item_id = input()
+        input_filename = input()
 
-        sales_data = load_sales_data(sales_filename, input_item_id)
+        input_data = load_input_data(input_item_id, input_filename)
 
-        print(min(sales_data, key=lambda n: n[1])[0])
+        print(min(input_data, key=lambda n: n[1])[0])
+
+        return 0
     except Exception:
         print('INVALID INPUT')
+        return 1
 
 
-def load_sales_data(sales_filename, input_item_id):
-    import csv
-
+def load_input_data(input_item_id, input_filename):
     result = []
 
-    with open(sales_filename) as f:
-        for row in csv.reader(f):
-            item_id = row[0]
-            city = row[2]
-            price = float(row[4])
+    with open(input_filename, encoding='utf-8') as f:
+        for line in csv.reader(f):
+            item_id = line[0]
+            item_city = line[2]
+            item_price = line[-1]
 
             if item_id == input_item_id:
-                result.append((city, price))
+                result.append((item_city, float(item_price)))
 
     return result
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
