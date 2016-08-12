@@ -1,10 +1,10 @@
 import sys
-from collections import OrderedDict
 from datetime import datetime
 
 import requests
+import pytz
 
-APP_ID = 'YOURAPPIDHERE'
+APP_ID = '965acdac1ae64cf06761bb563ad34d96'
 API_URL = 'http://api.openweathermap.org/data/2.5/weather'
 STATUS_CODE_OK = 200
 
@@ -16,18 +16,16 @@ def main():
 
     print('\n. . . Извличане на метеорологична информация за град {} . . .\n'.format(city))
 
-    params = OrderedDict([('appid', APP_ID), ('q', city)])
-    resp = requests.get(API_URL, params=params, timeout=5)
+    response = requests.get(API_URL, params={'q': city, 'appid': APP_ID}, timeout=20)
+    response_json = response.json()
 
-    resp_json = resp.json()
-
-    if resp_json['cod'] != STATUS_CODE_OK:
-        print(resp_json['message'])
+    if response_json['cod'] != STATUS_CODE_OK:
+        print(response_json['message'])
         return 2
 
-    main_info = resp_json['main']
-    wind_info = resp_json['wind']
-    dt_timestamp = resp_json['dt']
+    main_info = response_json['main']
+    wind_info = response_json['wind']
+    dt_timestamp = response_json['dt']
 
     print('''Информация към: {dt}
 Температура: {temperature:.1f}°C
@@ -35,7 +33,7 @@ def main():
 Влажност: {humidity}%
 Вятър: {wind_speed:.2f} м/с
 '''.format(
-        dt=datetime.fromtimestamp(dt_timestamp),
+        dt=datetime.fromtimestamp(dt_timestamp, tz=pytz.utc).strftime('%d-%m-%Y %H:%m'),
         temperature=main_info['temp'] - KELVIN_TO_CELSIUS_SUBTRACT,
         pressure=main_info['pressure'],
         humidity=main_info['humidity'],

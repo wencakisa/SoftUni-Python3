@@ -1,50 +1,70 @@
 import sys
+from urllib.request import urljoin
 
 import requests
 
-API_URL = 'http://api.fixer.io/{date}?base={base_currency}'
-
-EXCHANGE_RATES_KEY = 'rates'
-ERROR_MSG_KEY = 'error'
+API_URL = 'http://api.fixer.io/'
+STATUS_CODE_OK = 200
 
 
 def main():
-    from_date = input('Въведете дата (yyyy-mm-dd): ')
-    from_currency = input('Въведете валута: ')
-    from_amount = float(input('Въведете сума: '))
-    to_currency = input('Въведете валута, към която да се конвертира: ')
+    date = input('Въведете дата (yyyy-mm-dd): ')
 
-    print('\n. . . Извличане на валутни курсове . . .\n')
+    currency = input('Въведете валута: ')
+    currency = currency.upper()
 
-    api_url_formatted = API_URL.format(date=from_date, base_currency=to_currency)
-    exchange_rates = get_exchange_rates(request_url=api_url_formatted)
-
-    print('Равностойност в {}: {:.2f}'.format(
-        to_currency,
-        from_amount / get_conversion_rate(from_currency, exchange_rates)
-    ))
-
-    return 0
-
-
-def get_exchange_rates(request_url: str) -> dict:
-    resp = requests.get(request_url, timeout=5)
-    resp_json = resp.json()
-
+    amount_str = input('Въведете сума: ')
     try:
-        return resp_json[EXCHANGE_RATES_KEY]
-    except KeyError:
-        print(resp_json[ERROR_MSG_KEY])
-        sys.exit(2)
+        amount = float(amount_str)
+        if amount < 0:
+            print('Поддържат се само суми >= 0!')
+            return 1
+    except ValueError:
+        print('Невалидна стойност: {}'.format(amount_str))
+        return 2
+
+    base_currency = input('Въведете валута, към която да се преизчисли сумата: ')
+    base_currency = base_currency.upper()
+
+    print('\n. . . Извличане на обменни курсове . . .\n')
+
+    rates = get_exchange_rates(base_currency, api_url=urljoin(API_URL, date))
+
+    if rates is None:
+        print('Обменните курсове не могат да бъдат заредени! '
+              'Моля, обърнете се към системния администратор.')
+        return 2
+
+    amount_in_base_currency = calculate_rate_in_base_currency(rates, currency, amount)
+
+    if amount_in_base_currency is not None:
+        print('Равностойност в {}: {:.2f}'.format(base_currency, amount_in_base_currency))
+        return 0
+    else:
+        print('Няма информация за валута: {}'.format(currency))
+        return 2
 
 
-def get_conversion_rate(from_currency: str, exchange_rates: dict) -> float:
+def calculate_rate_in_base_currency(rates: dict, currency: str, amount_in_currency: float) -> float:
     try:
-        return exchange_rates[from_currency]
+        return amount_in_currency / rates[currency]
     except KeyError:
-        print('Няма информация за валута: {}'.format(from_currency))
-        sys.exit(2)
+        return None
 
+
+def get_exchange_rates(base_currency: str, api_url: str=API_URL) -> dict:
+    try:
+        response = requests.get(api_url, params={'base': base_currency}, timeout=20)
+        print(response.url)
+        if response.status_code == STATUS_CODE_OK:
+            exchange_rates = response.json()
+            return exchange_rates.get('rates', {})
+        else:
+            print('Error from server: {}'.format(response.status_code))
+    except Exception as e:
+        print('Error from server!!! ', str(e))
+
+    return None
 
 if __name__ == '__main__':
     sys.exit(main())
