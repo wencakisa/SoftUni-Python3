@@ -55,7 +55,7 @@ def calculate_rate_in_base_currency(rates: dict, currency: str, amount_in_curren
 def get_exchange_rates(base_currency: str, api_url: str=API_URL) -> dict:
     try:
         response = requests.get(api_url, params={'base': base_currency}, timeout=20)
-        print(response.url)
+
         if response.status_code == STATUS_CODE_OK:
             exchange_rates = response.json()
             return exchange_rates.get('rates', {})
