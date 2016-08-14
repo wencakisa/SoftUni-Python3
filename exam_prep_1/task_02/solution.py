@@ -1,3 +1,4 @@
+import sys
 from math import sqrt
 
 
@@ -7,13 +8,18 @@ def main():
         b = float(input())
         c = float(input())
 
-        p = (a + b + c) / 2
-
-        area = sqrt(p * (p - a) * (p - b) * (p - c))
-
-        print('{:.2f}'.format(area))
+        print('{:.2f}'.format(get_area(a, b, c)))
+        return 0
     except Exception:
         print('INVALID INPUT')
+        return 1
+
+
+def get_area(a: float, b: float, c: float) -> float:
+    p = (a + b + c) / 2
+
+    return sqrt(p * (p - a) * (p - b) * (p - c))
+
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

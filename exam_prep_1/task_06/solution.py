@@ -1,16 +1,24 @@
+import sys
 import csv
 
 
 def main():
-    filename = input()
+    try:
+        input_filename = input()
 
-    with open(filename) as f:
-        result = [
-            ((int(line[1]) - int(line[0]) + 1) / int(line[2]))
-            for line in csv.reader(f)
-        ]
+        total_time = 0
+        with open(input_filename) as f:
+            for row in csv.reader(f):
+                km_from, km_to, speed_limit = tuple(map(int, row))
+                total_kilometers = km_to - km_from + 1
 
-    print('{:.2f}'.format(sum(result)))
+                total_time += total_kilometers / speed_limit
+
+        print('{:.2f}'.format(total_time))
+        return 0
+    except Exception as e:
+        print('INVALID INPUT: {}'.format(e))
+        return 1
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

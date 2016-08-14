@@ -1,40 +1,34 @@
 import sys
+import csv
 
 
 def main():
     try:
-        w = float(input())
-        h = float(input())
-        d = float(input())
+        box_w = float(input())
+        box_h = float(input())
+        box_d = float(input())
         input_filename = input()
 
-        print('\n'.join(get_fitting(box_dimensions=sorted((w, h, d)), input_data=load_input_data(input_filename))))
+        box_dimensions = sorted((box_w, box_h, box_d))
 
+        with open(input_filename, encoding='utf-8') as f:
+            for package_name, package_dimensions in load_packages(f):
+                if package_fits_in_box(package_dimensions, box_dimensions):
+                    print(package_name)
         return 0
     except Exception:
         print('INVALID INPUT')
         return 1
 
 
-def load_input_data(input_filename):
-    result = []
-
-    with open(input_filename, encoding='utf-8') as f:
-        for line in f:
-            if line.strip():
-                name, *dimensions = line.split(',')
-
-                result.append((name, sorted(map(float, dimensions))))
-
-    return result
+def load_packages(f):
+    for line in csv.reader(f):
+        name, *dimensions = line
+        yield (name, sorted(map(float, dimensions)))
 
 
-def get_fitting(box_dimensions, input_data):
-    return [
-        name for name, dimensions in input_data
-        if all(dimensions[dim_index] <= box_dimensions[dim_index] for dim_index in range(3))
-    ]
-
+def package_fits_in_box(package_dimensions: list, box_dimensions: list) -> bool:
+    return all(package_dimensions[dim_index] <= box_dimensions[dim_index] for dim_index in range(len(box_dimensions)))
 
 if __name__ == '__main__':
     sys.exit(main())
