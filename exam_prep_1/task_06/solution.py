@@ -10,7 +10,7 @@ def main():
         for km_from, km_to, speed_limit in load_input_data(input_filename):
             total_kilometers = km_to - km_from + 1
             total_time += total_kilometers / speed_limit
-    
+
         print('{:.2f}'.format(total_time))
         return 0
     except Exception:

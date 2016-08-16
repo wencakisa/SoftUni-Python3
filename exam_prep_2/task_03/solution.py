@@ -6,9 +6,8 @@ def main():
         words_filename = input()
         word_input = input()
 
-        words = load_words(words_filename)
         anagrams = []
-        for word in words:
+        for word in load_words(words_filename):
             if sorted(word) == sorted(word_input) and word != word_input:
                 anagrams.append(word)
 
@@ -21,7 +20,8 @@ def main():
 
 def load_words(words_filename: str):
     with open(words_filename) as f:
-        return [line.strip() for line in f]
+        for line in f:
+            yield line.strip()
 
 if __name__ == '__main__':
     sys.exit(main())
