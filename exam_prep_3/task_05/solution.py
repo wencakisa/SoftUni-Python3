@@ -1,45 +1,51 @@
+import sys
 import csv
 from collections import defaultdict
 
 
 def main():
     try:
-        sales_filename = input()
+        input_filename = input()
 
-        sales_data = load_sales_data(sales_filename)
+        input_data = load_input_data(input_filename)
 
-        if not sales_data:
+        if not input_data:
             raise ValueError('Empty input file.')
 
-        unique_sales = get_unique_sales(sales_data)
-
+        unique_sales = get_unique_sales(sales=input_data)
         if unique_sales:
-            for city, product_ids in sorted(unique_sales.items(), key=lambda i: i[0]):
-                print('{},{}'.format(city, ','.join(sorted(product_ids))))
+            for city, item_ids in sorted(unique_sales.items(), key=lambda l: l[0]):
+                print(','.join([city] + sorted(item_ids)))
         else:
             print('NO UNIQUE SALES')
+
+        return 0
     except Exception:
         print('INVALID INPUT')
+        return 1
 
 
-def load_sales_data(sales_filename):
+def load_input_data(input_filename: str) -> defaultdict(set):
     result = defaultdict(set)
 
-    with open(sales_filename, encoding='utf-8') as f:
-        for line in csv.reader(f):
-            result[line[0]].add(line[2])
+    with open(input_filename, encoding='utf-8') as f:
+        for row in csv.reader(f):
+            item_id = row[0]
+            item_city = row[2]
+
+            result[item_id].add(item_city)
 
     return result
 
 
-def get_unique_sales(sales_data):
+def get_unique_sales(sales: defaultdict(set)) -> defaultdict(list):
     result = defaultdict(list)
 
-    for product_id, cities in sales_data.items():
+    for item_id, cities in sales.items():
         if len(cities) == 1:
-            result[cities.pop()].append(product_id)
+            result[cities.pop()].append(item_id)
 
     return result
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

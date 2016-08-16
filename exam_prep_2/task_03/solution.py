@@ -3,25 +3,25 @@ import sys
 
 def main():
     try:
-        words_file = input()
-        word_to_search = input()
+        words_filename = input()
+        word_input = input()
 
-        with open(words_file, encoding='utf-8') as f:
-            words = [word.strip() for word in f]
-
-        anagrams = [
-            word
-            for word in words
-            if sorted(word) == sorted(word_to_search) and
-            word != word_to_search
-        ]
+        words = load_words(words_filename)
+        anagrams = []
+        for word in words:
+            if sorted(word) == sorted(word_input) and word != word_input:
+                anagrams.append(word)
 
         print('\n'.join(sorted(anagrams)) if anagrams else 'NO ANAGRAMS')
-
         return 0
     except Exception:
         print('INVALID INPUT')
         return 1
+
+
+def load_words(words_filename: str):
+    with open(words_filename) as f:
+        return [line.strip() for line in f]
 
 if __name__ == '__main__':
     sys.exit(main())

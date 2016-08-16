@@ -1,22 +1,24 @@
+import sys
 import string
 
 
 def main():
     try:
-        cipher_key = int(input())
-        text_to_encode = input()
+        encoding_key = int(input())
+        message_to_encode = str(input())
 
-        print(encode(cipher_key, text_to_encode))
+        print(encode(key=encoding_key, message=message_to_encode))
+        return 0
     except Exception:
         print('INVALID INPUT')
+        return 1
 
 
-def encode(cipher_key: int, text_to_encode: str):
+def encode(key: int, message: str) -> str:
     alphabet = string.ascii_uppercase
-    cipher = alphabet[cipher_key:] + alphabet[:cipher_key]
+    encoding_alphabet = alphabet[key:] + alphabet[:key]
 
-    return ''.join([symbol if not symbol.isalpha() else cipher[alphabet.find(symbol)] for symbol in text_to_encode])
-
+    return ''.join(encoding_alphabet[alphabet.find(letter)] if letter.isalpha() else letter for letter in message)
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

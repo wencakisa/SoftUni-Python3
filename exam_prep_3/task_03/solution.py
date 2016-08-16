@@ -1,47 +1,51 @@
+import sys
+import csv
 from math import pi
 
 
 def main():
     try:
-        rakia_liters = float(input())  # dm^3
-        containers_filename = str(input())
+        rakia_liters_in_dm = float(input())  # 1l == 1dm^3
 
-        if rakia_liters <= 0:
-            raise ValueError('Invalid rakia liters: {}'.format(rakia_liters))
+        if rakia_liters_in_dm <= 0:
+            raise ValueError('Liters must be > 0!')
 
+        containers_filename = input()
         containers = load_containers(containers_filename)
 
-        print(get_min_suitable_container(rakia_liters, containers))
+        suitable_containers = get_suitable_containers(containers, rakia_liters_in_dm)
+
+        print(min(suitable_containers, key=lambda n: n[1])[0] if suitable_containers else 'NO SUITABLE CONTAINER')
+        return 0
     except Exception:
         print('INVALID INPUT')
+        return 1
 
 
 def load_containers(containers_filename: str) -> list:
     result = []
-
     with open(containers_filename, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
+        for row in csv.reader(f):
+            if row:
+                name, radius, height = row
+                radius = float(radius)
+                height = float(height)
 
-            if line:
-                name, radius, height = line.split(',')
-                result.append((name, float(radius), float(height)))
+                result.append((name, radius, height))
 
     return result
 
 
-def get_min_suitable_container(rakia_liters: float, containers: list) -> str:
+def get_suitable_containers(containers: list, rakia_liters_in_dm: float) -> list:
     result = []
-
     for name, radius, height in containers:
-        capacity = pi * (radius ** 2) * height
-        capacity /= 1000  # Convert from cm^3 to dm^3
+        capacity_in_cm = pi * (radius ** 2) * height
+        capacity_in_dm = capacity_in_cm / 1000
 
-        if capacity >= rakia_liters:
-            result.append((name, capacity))
+        if capacity_in_dm >= rakia_liters_in_dm:
+            result.append((name, capacity_in_dm))
 
-    return min(result, key=lambda c: c[1])[0] if result else 'NO SUITABLE CONTAINER'
-
+    return result
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

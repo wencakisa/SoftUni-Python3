@@ -1,4 +1,4 @@
-FLASK_COVER_AREA = 1.76  # m^2
+FLASK_AREA = 1.76  # m^2
 
 
 def main():
@@ -6,14 +6,13 @@ def main():
     wall_height = float(input())
 
     wall_area = wall_width * wall_height
-    flasks = 0
+    flasks_count = 0
 
-    while wall_area > 0:
-        flasks += 1
-        wall_area -= FLASK_COVER_AREA
+    while wall_area >= 0:
+        wall_area -= FLASK_AREA
+        flasks_count += 1
 
-    print(flasks)
-
+    print(flasks_count)
 
 if __name__ == '__main__':
     main()

@@ -11,20 +11,20 @@ def main():
 
         box_dimensions = sorted((box_w, box_h, box_d))
 
-        with open(input_filename, encoding='utf-8') as f:
-            for package_name, package_dimensions in load_packages(f):
-                if package_fits_in_box(package_dimensions, box_dimensions):
-                    print(package_name)
+        for package_name, package_dimensions in load_packages(input_filename):
+            if package_fits_in_box(package_dimensions, box_dimensions):
+                print(package_name)
         return 0
     except Exception:
         print('INVALID INPUT')
         return 1
 
 
-def load_packages(f):
-    for line in csv.reader(f):
-        name, *dimensions = line
-        yield (name, sorted(map(float, dimensions)))
+def load_packages(input_filename: str):
+    with open(input_filename, encoding='utf-8') as f:
+        for line in csv.reader(f):
+            name, *dimensions = line
+            yield (name, sorted(map(float, dimensions)))
 
 
 def package_fits_in_box(package_dimensions: list, box_dimensions: list) -> bool:

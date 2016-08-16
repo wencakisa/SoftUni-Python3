@@ -1,62 +1,50 @@
+import sys
+
 STEP_DIRECTION_X_MAPPING = {
-    'right': 1,
-    'left': -1
+    'left': -1,
+    'right': 1
 }
 STEP_DIRECTION_Y_MAPPING = {
-    'up': 1,
-    'down': -1
+    'down': -1,
+    'up': 1
 }
 
 
 def main():
     try:
-        steps_filename = str(input())
+        input_filename = input()
 
-        steps = load_steps(steps_filename)
+        with open(input_filename) as f:
+            steps_x_y = list(load_steps_as_x_y(f))
 
-        if not steps:
-            raise ValueError('Empty input file.')
-
-        x, y = get_end_point_x_y(steps)
-
-        print('X {:.3f}'.format(x))
-        print('Y {:.3f}'.format(y))
+            if steps_x_y:
+                print('X {:.3f}'.format(sum(i[0] for i in steps_x_y)))
+                print('Y {:.3f}'.format(sum(i[1] for i in steps_x_y)))
+            else:
+                raise ValueError('Empty input file: {}'.format(input_filename))
+        return 0
     except Exception:
         print('INVALID INPUT')
+        return 1
 
 
-def load_steps(steps_filename: str) -> list:
-    result = []
+def load_steps_as_x_y(f):
+    for line in f:
+        line = line.strip()
+        if line:
+            items = line.split(' ')
+            if len(items) != 2:
+                raise ValueError('Wrongs number of items: {}'.format(len(items)))
 
-    with open(steps_filename, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
+            direction, step_length = items
+            step_length = float(step_length)
 
-            if line:
-                items = line.split(' ')
-
-                if len(items) != 2:
-                    raise ValueError("Wrong number of items: {}.".format(items))
-
-                direction, mapping = items
-                result.append((direction, float(mapping)))
-
-    return result
-
-
-def get_end_point_x_y(steps: list) -> tuple:
-    x_coord, y_coord = 0, 0
-
-    for direction, mapping in steps:
-        if direction in STEP_DIRECTION_X_MAPPING:
-            x_coord += STEP_DIRECTION_X_MAPPING[direction] * mapping
-        elif direction in STEP_DIRECTION_Y_MAPPING:
-            y_coord += STEP_DIRECTION_Y_MAPPING[direction] * mapping
-        else:
-            raise ValueError('Invalid direction.')
-
-    return x_coord, y_coord
-
+            if direction in STEP_DIRECTION_X_MAPPING:
+                yield (step_length * STEP_DIRECTION_X_MAPPING[direction]), 0
+            elif direction in STEP_DIRECTION_Y_MAPPING:
+                yield 0, (step_length * STEP_DIRECTION_Y_MAPPING[direction])
+            else:
+                raise ValueError('Invalid direction: {}'.format(direction))
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
