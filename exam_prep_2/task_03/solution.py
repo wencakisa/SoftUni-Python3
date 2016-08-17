@@ -21,7 +21,9 @@ def main():
 def load_words(words_filename: str):
     with open(words_filename) as f:
         for line in f:
-            yield line.strip()
+            line = line.strip()
+            if line:
+                yield line
 
 if __name__ == '__main__':
     sys.exit(main())

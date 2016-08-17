@@ -1,17 +1,20 @@
-FLASK_AREA = 1.76  # m^2
+import sys
+from math import ceil
+
+FLASK_AREA = 1.76
 
 
 def main():
-    wall_width = float(input())
-    wall_height = float(input())
+    try:
+        wall_width = float(input())
+        wall_height = float(input())
+        wall_area = wall_width * wall_height
 
-    wall_area = wall_width * wall_height
-    flasks_count = 0
-    while wall_area >= 0:
-        wall_area -= FLASK_AREA
-        flasks_count += 1
-
-    print(flasks_count)
+        print(ceil(wall_area / FLASK_AREA))
+        return 0
+    except Exception:
+        print('INVALID INPUT')
+        return 1
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
