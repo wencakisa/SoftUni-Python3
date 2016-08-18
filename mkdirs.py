@@ -15,10 +15,6 @@ def main():
         current_dir = os.path.join(dir_full, DIR_FORMAT.format(i))
 
         os.mkdir(current_dir)
-        os.chdir(current_dir)
-
-        with open(FILENAME, mode='w'):
-            pass
 
 
 def parse_cmd_line_params() -> tuple:
