@@ -59,12 +59,12 @@ sqlite&gt;
 <p>Обикновено е autoincrement / serial - при вмъкване на данни в таблицата, базата данни автоматично попълва последователен int.</p>
 <h3 id="-foreign-key-fk-">Релации и Foreign key / FK / Ключ към друга таблица</h3>
 <p>Най-голямата сила на релационните бази данни е моделирането на данните като релации между таблиците.</p>
-<p><code>TODO</code></p>
+<p><code>DEMO</code></p>
 <h2 id="-">Параметри</h2>
 <blockquote>
 <p>!!! ВАЖНО !!! Никога не изпълнявайте SQL заявки като конкатенирате / форматирате директно стойностите в SQL стринга. Това е една от най-често срещаните грешки в модерните софтуерни системи, и се нарича <a href="https://en.wikipedia.org/wiki/SQL_injection">SQL injection</a>. <strong>Винаги подавайте параметрите на SQL заявката отделно.</strong></p>
 </blockquote>
-<p><code>TODO</code></p>
+<p><code>DEMO</code></p>
 <h2 id="sql-select">SQL: Select</h2>
 <pre><code>select * from catalog;
 
@@ -81,6 +81,63 @@ select * from catalog where category = 'SHOES';
 <pre><code>update sale set city = 'Frankfurt' where city = 'Frankfurt am Main';
 </code></pre><h2 id="sql-delete">SQL: Delete</h2>
 <pre><code>delete from sale where city = 'London';
+</code></pre><h2 id="-">Примери на живо</h2>
+<pre><code>import sqlite3
+
+
+def main():
+    with sqlite3.connect('./sales-example.db', isolation_level=None) as connection:
+        print_catalog(connection)
+        # demo_sql_injection(connection)
+        new_catalog_entry(connection, item_key='11111111', category='OIUIUYUYT')
+        print_catalog(connection)
+
+
+def demo_sql_injection(connection):
+    """
+
+    !!!!!!!!! DO NOT DO THIS !!!!!!!!!
+
+    :param connection:
+    :return:
+    """
+    print('DEMO: SQL Injection')
+    username = input("username: ")
+    password = '28542932652237584905972396438992379dfvdhcdjvhgbh'
+    wrong_sql_auth = "select * from users where username='" + username + "' and password='{}';".format(username, password)
+    print(wrong_sql_auth)
+
+    # item_key = input("item id = ")
+    # category = 'jyftguhj'
+    #  wrong_sql = "insert into catalog (item_key, category) values ('{}', '{}')".format(item_key, category)
+    # print(wrong_sql)
+
+
+
+def new_catalog_entry(connection, item_key: str, category: str):
+    """
+    insert into catalog (item_key, category) values ('888888', 'BALLS');
+    """
+    cursor = connection.cursor()
+    cursor.execute(
+        'insert into catalog (item_key, category) values (?, ?)',
+        [item_key, category]
+    )
+
+
+
+def print_catalog(connection):
+    cursor = connection.cursor()
+    cursor.execute('select * from catalog')
+    for row_number, row in enumerate(cursor.fetchall(), start=1):
+        print("\nRecord #{}".format(row_number))
+        print("\tid = {}".format(row[0]))
+        print("\titem_key = {}".format(row[1]))
+        print("\tcategory = {}".format(row[2]))
+
+
+if __name__ == '__main__':
+    main()
 </code></pre>
 </div>
 </body>
