@@ -30,7 +30,7 @@ def load_city_info(city_info_filename: str) -> defaultdict(set):
     with open(city_info_filename, encoding='utf-8') as f:
         for row in csv.reader(f):
             if row:
-                date_str, city, *_ = row
+                date_str, city = row
                 date = iso8601.parse_date(date_str).date()
 
                 result[date].add(city)

@@ -1,0 +1,24 @@
+*   Don't copy directly from .pdf files!
+
+*   math.ceil(x)
+
+*   input_data = load_input_data(input_filename)
+*
+*   if not input_data:
+*       raise ValueError('Empty input file.')
+
+*   rakia_liters_in_dm = float(input())
+*
+*   if rakia_liters_in_dm <= 0:
+*       raise ValueError('Liters must be > 0!')
+
+*   defaultdict(set)
+
+*   with open(input_filename, encoding='utf-8') as f:
+
+*   print(','.join([city] + sorted(item_ids)))
+*   print('{},{}'.format(date, ','.join(sorted(cities))))
+
+*   package_dims = sorted(package_dims)
+*   box_dims = sorted(box_dims)
+*   all(package_dims[i] <= box_dims[i] for i in range(len(box_dims)))

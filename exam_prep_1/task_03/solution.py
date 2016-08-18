@@ -24,7 +24,7 @@ def load_packages(input_filename: str):
     with open(input_filename, encoding='utf-8') as f:
         for line in csv.reader(f):
             name, *dimensions = line
-            yield (name, sorted(map(float, dimensions)))
+            yield name, sorted(map(float, dimensions))
 
 
 def package_fits_in_box(package_dimensions: list, box_dimensions: list) -> bool:

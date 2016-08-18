@@ -23,7 +23,7 @@ def load_exchange_data(exchange_filename: str) -> dict:
         for line in f:
             line = line.strip()
             if line:
-                exchange_currency, exchange_rate, *_ = line.split(' ')
+                exchange_currency, exchange_rate = line.split(' ')
 
                 result[exchange_currency] = float(exchange_rate)
 
@@ -35,9 +35,9 @@ def load_amounts_data(amounts_filename: str):
         for line in f:
             line = line.strip()
             if line:
-                amount, currency, *_ = line.split(' ')
+                amount, currency, = line.split(' ')
 
-                yield (currency, float(amount))
+                yield currency, float(amount)
 
 if __name__ == '__main__':
     sys.exit(main())
