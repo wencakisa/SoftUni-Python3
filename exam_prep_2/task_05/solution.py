@@ -1,57 +1,69 @@
+import sys
 from urllib.parse import urlparse
+from collections import defaultdict
+
+
+RESPONSE_TIME_FIELD_PREFIX = 'resp_t="'
+URL_FIELD_PREFIX = 'url="'
+
+FIELD_SUFFIX = '"'
 
 IGNORE_ENDING_WITH = '/ws/'
 
 
 def main():
-    input_filename = input()
+    try:
+        log_filename = input()
 
-    url_times = {}  # key: url / value: [total_count, total_time]
-    for url_path, resp_t in load_log_lines(input_filename):
-        if url_path not in url_times:
-            url_times[url_path] = [0, 0]
+        log_dict = defaultdict(list)
+        for resp_t, url_path in load_log_lines(log_filename):
+            log_dict[url_path].append(resp_t)
 
-        url_times[url_path][0] += 1
-        url_times[url_path][1] += resp_t
+        if log_dict:
+            for url_path, resp_times in log_dict.items():
+                # Convert response times to average response time
+                log_dict[url_path] = sum(resp_times) / len(resp_times)
 
-    if url_times:
-        max_avg_time_url = max(
-            url_times.items(),
-            key=lambda kv: kv[1][1] / kv[1][0]
-        )
+            max_resp_t_url, max_resp_t = max(
+                log_dict.items(),
+                key=lambda kv: kv[1]
+            )
 
-        print(max_avg_time_url[0])
-        print('{:.3f}'.format(max_avg_time_url[1][1] / max_avg_time_url[1][0]))
+            print(max_resp_t_url)
+            print('{:.3f}'.format(max_resp_t))
+        else:
+            print('NO DATA.')
+
+        return 0
+    except Exception:
+        print('INVALID INPUT')
+        return 1
 
 
-def load_log_lines(input_filename: str):
-    with open(input_filename, encoding='utf-8') as f:
+def load_log_lines(log_filename: str) -> tuple:
+    with open(log_filename, encoding='utf-8') as f:
         for line in f:
             line = line.strip()
-            url = get_field(line, prefix='url="', suffix='"')
-            resp_t = float(get_field(line, prefix='resp_t="', suffix='"'))
 
-            url_parse_result = urlparse(url)
-            url_path = url_parse_result.path
+            if line:
+                resp_t = get_field(line, prefix=RESPONSE_TIME_FIELD_PREFIX)
+                resp_t = float(resp_t)
 
-            if not url_path.endswith(IGNORE_ENDING_WITH):
-                yield url_path, resp_t
+                url = get_field(line, prefix=URL_FIELD_PREFIX)
+                url_path = urlparse(url).path
+
+                if not url_path.endswith(IGNORE_ENDING_WITH):
+                    yield resp_t, url_path
 
 
-def get_field(line, prefix, suffix):
-    """
-    >>> get_field('.... resp_t="2.34" neshto drugo we', prefix='resp_t="', suffix='"')
-    '2.34'
-    """
+def get_field(line: str, prefix: str, suffix: str=FIELD_SUFFIX) -> str:
     prefix_len = len(prefix)
-    idx_prefix = line.find(prefix)
+    prefix_index = line.find(prefix)
 
-    if idx_prefix >= 0:
-        idx_suffix = line.find(suffix, idx_prefix + prefix_len)
-        if idx_suffix >= 0:
-            return line[idx_prefix + prefix_len: idx_suffix]
+    if prefix_index >= 0:
+        suffix_index = line.find(suffix, prefix_index + prefix_len)
+        if suffix_index >= 0:
+            return line[prefix_index + prefix_len: suffix_index]
 
 if __name__ == '__main__':
-    main()
-    # import doctest
-    # doctest.testmod()
+    sys.exit(main())

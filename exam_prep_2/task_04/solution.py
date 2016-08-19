@@ -8,28 +8,25 @@ def main():
     try:
         input_filename = input()
 
-        last_temp = None
-        for dt, temp in load_temp_info(input_filename):
-            if last_temp is None:
-                last_temp = temp
+        previous_temp = None
+        for current_dt, current_temp in load_temp_info(input_filename):
+            if previous_temp is not None:
+                if current_temp - previous_temp >= TEMP_DIFFERENCE:
+                    print(current_dt)
 
-            if temp - last_temp >= TEMP_DIFFERENCE:
-                print(dt)
-
-            last_temp = temp
+            previous_temp = current_temp
         return 0
     except Exception:
         print('INVALID INPUT')
         return 1
 
 
-def load_temp_info(input_filename: str):
-    with open(input_filename) as f:
+def load_temp_info(input_filename: str) -> tuple:
+    with open(input_filename, encoding='utf-8') as f:
         for row in csv.reader(f):
-            dt = row[0]
-            temp = float(row[1])
+            dt, temp = row
 
-            yield dt, temp
+            yield dt, float(temp)
 
 if __name__ == '__main__':
     sys.exit(main())

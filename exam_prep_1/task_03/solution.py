@@ -11,8 +11,11 @@ def main():
 
         box_dimensions = sorted((box_w, box_h, box_d))
 
-        for package_name, package_dimensions in load_packages(input_filename):
-            if package_fits_in_box(package_dimensions, box_dimensions):
+        for package_name, package_dims in load_packages(input_filename):
+            if all(
+                package_dims[i] <= box_dims[i]
+                for i in range(len(box_dims))
+            ):
                 print(package_name)
         return 0
     except Exception:
@@ -20,15 +23,11 @@ def main():
         return 1
 
 
-def load_packages(input_filename: str):
+def load_packages(input_filename: str) -> tuple:
     with open(input_filename, encoding='utf-8') as f:
         for line in csv.reader(f):
-            name, *dimensions = line
-            yield name, sorted(map(float, dimensions))
-
-
-def package_fits_in_box(package_dimensions: list, box_dimensions: list) -> bool:
-    return all(package_dimensions[dim_index] <= box_dimensions[dim_index] for dim_index in range(len(box_dimensions)))
+            name, w, h, d = line
+            yield name, float(w), float(h), float(d)
 
 if __name__ == '__main__':
     sys.exit(main())

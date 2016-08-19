@@ -18,8 +18,8 @@ def main():
         return 1
 
 
-def load_words(words_filename: str):
-    with open(words_filename) as f:
+def load_words(words_filename: str) -> str:
+    with open(words_filename, encoding='utf-8') as f:
         for line in f:
             line = line.strip()
             if line:
