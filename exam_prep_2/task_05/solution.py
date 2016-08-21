@@ -24,16 +24,12 @@ def main():
                 # Convert response times to average response time
                 log_dict[url_path] = sum(resp_times) / len(resp_times)
 
-            max_resp_t_url, max_resp_t = max(
-                log_dict.items(),
-                key=lambda kv: kv[1]
-            )
+            max_resp_t_url, max_resp_t = max(log_dict.items(), key=lambda kv: kv[1])
 
             print(max_resp_t_url)
             print('{:.3f}'.format(max_resp_t))
         else:
             print('NO DATA.')
-
         return 0
     except Exception:
         print('INVALID INPUT')
@@ -45,15 +41,19 @@ def load_log_lines(log_filename: str) -> tuple:
         for line in f:
             line = line.strip()
 
-            if line:
-                resp_t = get_field(line, prefix=RESPONSE_TIME_FIELD_PREFIX)
-                resp_t = float(resp_t)
+            if not line:
+                continue
 
-                url = get_field(line, prefix=URL_FIELD_PREFIX)
-                url_path = urlparse(url).path
+            resp_t = get_field(line, prefix=RESPONSE_TIME_FIELD_PREFIX)
+            resp_t = float(resp_t)
 
-                if not url_path.endswith(IGNORE_ENDING_WITH):
-                    yield resp_t, url_path
+            url = get_field(line, prefix=URL_FIELD_PREFIX)
+            url_path = urlparse(url).path
+
+            if url_path.endswith(IGNORE_ENDING_WITH):
+                continue
+
+            yield resp_t, url_path
 
 
 def get_field(line: str, prefix: str, suffix: str=FIELD_SUFFIX) -> str:

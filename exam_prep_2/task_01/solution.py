@@ -1,5 +1,5 @@
 import sys
-from math import ceil
+import math
 
 FLASK_AREA = 1.76
 
@@ -10,7 +10,7 @@ def main():
         wall_height = float(input())
         wall_area = wall_width * wall_height
 
-        print(ceil(wall_area / FLASK_AREA))
+        print(math.ceil(wall_area / FLASK_AREA))
         return 0
     except Exception:
         print('INVALID INPUT')

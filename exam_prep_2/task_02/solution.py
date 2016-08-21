@@ -18,12 +18,7 @@ def encrypt(key: int, message: str) -> str:
     alphabet = string.ascii_uppercase
     encrypting_alphabet = alphabet[key:] + alphabet[:key]  # MAGIC!
 
-    return ''.join(
-        encrypting_alphabet[alphabet.find(letter)]
-        if letter.isupper()
-        else letter
-        for letter in message
-    )
+    return ''.join(encrypting_alphabet[alphabet.find(letter)] if letter.isupper() else letter for letter in message)
 
 if __name__ == '__main__':
     sys.exit(main())
