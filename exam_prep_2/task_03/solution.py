@@ -5,14 +5,9 @@ def main():
     try:
         words_filename = input()
         word_to_check = input()
-        word_to_check_sorted = sorted(word_to_check)
 
-        anagrams = []
-        for word in load_words(words_filename):
-            if word_to_check_sorted == sorted(word) and word_to_check != word:
-                anagrams.append(word)
-
-        print('\n'.join(sorted(anagrams)) if anagrams else 'NO ANAGRAMS')
+        anagrams = sorted(filter(lambda word: sorted(word_to_check) == sorted(word) and word_to_check != word, load_words(words_filename)))
+        print('\n'.join(anagrams) if anagrams else 'NO ANAGRAMS')
         return 0
     except Exception:
         print('INVALID INPUT')
