@@ -10,11 +10,7 @@ def main():
         if k <= 0 or n <= 0 or m <= 0:
             raise ValueError('Negative prices are not supported.')
 
-        days_to_buy_bike = get_days_to_buy_bike(
-            bike_price=k,
-            money_saved_a_day=n,
-            money_spent_each_ten_days=m
-        )
+        days_to_buy_bike = get_days_to_buy_bike(bike_price=k, money_saved_a_day=n, money_spent_each_ten_days=m)
 
         print(days_to_buy_bike if days_to_buy_bike != -1 else 'NO BIKE FOR YOU')
 
@@ -30,7 +26,7 @@ def get_days_to_buy_bike(bike_price: float, money_saved_a_day: float, money_spen
     :param bike_price: price of the bike
     :param money_saved_a_day: every day you save this amount of money
     :param money_spent_each_ten_days: every tenth day you spent this amount of money
-    :return: if we have enough budget to buy the bike -> return the days needed to buy it.
+    :return: if we have enough budget to buy the bike -> return the days needed to buy it
              if we don't have enough budget to buy the bike -> return -1
     """
     money_saved = 0
@@ -50,5 +46,6 @@ def get_days_to_buy_bike(bike_price: float, money_saved_a_day: float, money_spen
             return days
 
     return -1
+
 if __name__ == '__main__':
     sys.exit(main())

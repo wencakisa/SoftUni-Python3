@@ -11,14 +11,14 @@ def main():
         if not brackets:
             raise ValueError('Empty string provided.')
 
-        opening_brackets = len(brackets.split(OPENING_BRACKET))
-        closing_brackets = len(brackets.split(CLOSING_BRACKET))
+        opening_brackets_count = len(brackets.split(OPENING_BRACKET))
+        closing_brackets_count = len(brackets.split(CLOSING_BRACKET))
 
-        first_opening_bracket_index = brackets.find(OPENING_BRACKET)
-        first_closing_bracket_index = brackets.find(CLOSING_BRACKET)
+        starting_brackets_index_difference = brackets.find(OPENING_BRACKET) - brackets.find(CLOSING_BRACKET)
+        bracket_pairs = opening_brackets_count - 1
 
-        if opening_brackets == closing_brackets and first_opening_bracket_index <= first_closing_bracket_index:
-            print('OK {}'.format(opening_brackets - 1))
+        if opening_brackets_count == closing_brackets_count and starting_brackets_index_difference >= 0:
+            print('OK {}'.format(bracket_pairs))
         else:
             print('WRONG {}'.format(len(brackets)))
 
